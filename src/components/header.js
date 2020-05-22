@@ -11,9 +11,9 @@ const Header=()=>{
             <div className="logo__text"><span className="logo__text-title">Cassio</span></div></a>
         </div>
         <div className="col-auto text-center" onClick={()=>setIsOpen(!IsOpen)}>
-          <div className="header__burger" id="js-burger">
-            <div className="header__burger-line" />
-            <div className="header__burger-line" />
+          <div className="header__burger"  id="js-burger">
+            <div className="header__burger-line" style={IsOpen?{"transform":"rotate(-45deg) translateY(6px)"}: {visibility:'none'}} />
+            <div className="header__burger-line" style={IsOpen?{"transform":"rotate(45deg) translateY(-6px)"}: {visibility:'none'}} />
           </div>
         </div>
         <div className="col d-none d-md-block text-right header__col-right">

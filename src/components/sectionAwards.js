@@ -2,8 +2,9 @@ import React from 'react'
 
 const SectionAwards=()=>{
     return(
-        <section className="section section-awards section_pb bg-dark color-white">
-        <div className="container">
+      <div>
+ <section className="section section-awards section_pb bg-dark color-white" >
+        <div className="container" >
           <div className="row">
             <div className="col">
               <div className="section-awards__wrapper-item">
@@ -78,6 +79,8 @@ const SectionAwards=()=>{
           </div>
         </div>
       </section>
+      </div>
+       
     )
 }
 

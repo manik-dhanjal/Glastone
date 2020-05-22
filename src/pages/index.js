@@ -43,18 +43,7 @@ const Home=()=>{
       <SectionAbout/>
       {/* - section ABOUT */}
       {/* section HEADER #1 */}
-      <section className="section section-content section_pb-xsmall bg-dark text-center" data-os-animation="data-os-animation">
-        <div className="container">
-          <div className="row justify-content-center">
-            <div className="col-lg-8 section-content__header">
-              <div className="section-content__subheading subheading split-text js-split-text" data-split-text-type="lines" data-split-text-set="lines"><span>Our latest works</span></div>
-              <div className="split-text js-split-text" data-split-text-type="lines" data-split-text-set="lines">
-                <h3>We identify the essential around new visual perspectives.</h3>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      
       {/* - section HEADER #1 */}
       {/* section LATEST PROJECTS */}
       <SectionProjects/>

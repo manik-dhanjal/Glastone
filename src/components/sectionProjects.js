@@ -3,6 +3,18 @@ import React from 'react'
 const SectionProjects=()=>{
     return(
         <div>
+          <section className="section section-content section_pb-xsmall bg-dark text-center "style={{visibility: "inherit",opacity: "1"}} data-os-animation="data-os-animation">
+        <div className="container">
+          <div className="row justify-content-center">
+            <div className="col-lg-8 section-content__header">
+              <div className="section-content__subheading subheading split-text js-split-text" data-split-text-type="lines" data-split-text-set="lines"><span>Our latest works</span></div>
+              <div className="split-text js-split-text" data-split-text-type="lines" data-split-text-set="lines">
+                <h3>WE PROVIDE THE FINISHING TOUCH, THE FINAL ACCESSORY TO YOUR PERSPECTIVES</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
  <section className="section section-portfolio bg-dark">
         <div className="swiper-container slider slider-projects js-slider-projects">
           <div className="swiper-wrapper">
