@@ -8,7 +8,7 @@ const SectionAbout=()=>{
             <div className="col-lg-6 section-about__content order-lg-2">
               <header className="section-about__header">
                 <div className="section__headline section-about__headline" />
-                <h2 className="section-about__heading">We at Glastone Mosaic, backed by our strong spirit and time tested expertise, aim to provide an endless range of Mosaics and Patterns to turn your ideas into everlasting memories</h2>
+                <h2 className="section-about__heading" style={{backgroundColor:'#333333',padding:'50px',fontSize:'30px',width:'60%'}}>We at Glastone Mosaic, backed by our strong spirit and time tested expertise, aim to provide an endless range of Mosaics and Patterns to turn your ideas into everlasting memories</h2>
                 <div className="section-about__decor bg-dots" data-art-parallax="element" data-art-parallax-y="25%" />
               </header>
               <div className="section-about__wrapper-content">

@@ -132,19 +132,19 @@ const Header=()=>{
               </ul>
             </div>
             <div className="col-lg-4 text-left">
-              <p className="split-text js-split-text" data-split-text-type="lines" data-split-text-set="lines">4967 Poe Lane<br />Lenexa, KS 66215</p>
+              <p className="split-text js-split-text" data-split-text-type="lines" data-split-text-set="lines">- Registered office - 47A, Gautam Nagar, New Delhi - 110 049. - Works - 1-7 & 1-13, Site-C, Surajpur Industrial Area Greater Noida - 201 306.</p>
             </div>
             <div className="col-lg-4 text-center">
               <p className="split-text js-split-text" data-split-text-type="lines" data-split-text-set="lines"><a href="https://artemsemkin.com/cdn-cgi/l/email-protection#2a595f5a5a45585e6a4b585e4f47594f4741434404494547"><span className="__cf_email__" data-cfemail="681b1d1818071a1c28091a1c0d051b0d05030106460b0705">[email&nbsp;protected]</span></a></p>
             </div>
             <div className="col-lg-4 text-right">
-              <p className="split-text js-split-text" data-split-text-type="lines" data-split-text-set="lines">+1 913 522 5256</p>
+              <p className="split-text js-split-text" data-split-text-type="lines" data-split-text-set="lines">+91 96250 64678</p>
             </div>
           </div>
         </div>
       </div>
       {/* - information */}
-      <div className="header__circle-letters">
+      {/* <div className="header__circle-letters">
         <div className="header__circle-letters-inner">
           <svg className="vector-letters" width="158px" height="158px" viewBox="0 0 158 158" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink">
             <path className="vector-letter current" id="vector-A" d="M124.16,114.16 C125.546674,117.680018 127.146658,120.239992 128.96,121.84 C130.773342,123.440008 132.533325,124.293333 134.24,124.4 L134.24,127.6 C127.839968,127.279998 119.733382,127.12 109.92,127.12 C99.0399456,127.12 90.93336,127.279998 85.6,127.6 L85.6,124.4 C89.6533536,124.186666 92.5333248,123.680004 94.24,122.88 C95.9466752,122.079996 96.8,120.666677 96.8,118.64 C96.8,116.71999 96.1600064,114.160016 94.88,110.96 L85.28,84.72 L50.4,84.72 L46.24,95.76 C43.2533184,103.440038 41.76,109.359979 41.76,113.52 C41.76,117.466686 42.959988,120.213326 45.36,121.76 C47.760012,123.306674 51.3066432,124.186666 56,124.4 L56,127.6 C48.7466304,127.279998 42.1333632,127.12 36.16,127.12 C31.2533088,127.12 27.200016,127.279998 24,127.6 L24,124.4 C29.2266928,123.439995 33.8133136,117.840051 37.76,107.6 L74.24,14 C75.4133392,14.1066672 77.2799872,14.16 79.84,14.16 C82.4000128,14.16 84.213328,14.1066672 85.28,14 L124.16,114.16 Z M84.16,81.52 L68.32,38.32 L51.68,81.52 L84.16,81.52 Z" />
@@ -192,7 +192,7 @@ const Header=()=>{
             </g>
           </svg>
         </div>
-      </div>
+      </div> */}
       {/* - letters */}
       <div className="header__curtain bg-ornament" />
     </div>
