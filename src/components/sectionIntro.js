@@ -14,7 +14,7 @@ const SectionIntro=()=>{
           </header>
         </div>
         <div className="section-masthead__background section-masthead__background_fullscreen" data-art-parallax="background" data-art-parallax-factor="0.1">
-        <div className="art-parallax__bg lazy-bg lazy-bg_loaded" style={{transform: 'translate(0%, -3.77468%) matrix3d(1.1, 5.97587e-05, 0, 0, -5.97587e-05, 1.1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1)', backgroundImage: 'url("img/assets/sectionIntro/bg-11.jpg")', transformOrigin: 'center center 0px'}} />
+        <div className="art-parallax__bg lazy-bg lazy-bg_loaded" style={{transform: 'translate(0%, -3.77468%) matrix3d(1.1, 5.97587e-05, 0, 0, -5.97587e-05, 1.1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1)', backgroundImage: 'url("img/assets/HP1.jpg")', transformOrigin: 'center center 0px'}} />
         <div className="overlay overlay_dark section-masthead__overlay" />
       </div>
       </section>

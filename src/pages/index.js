@@ -46,13 +46,13 @@ const Home=()=>{
       
       {/* - section HEADER #1 */}
       {/* section LATEST PROJECTS */}
-      <SectionProjects/>
+      {/* <SectionProjects/> */}
       {/* - section HEADER #2 */}
       {/* section AWARDS */}
-      <SectionAwards/>
+      {/* <SectionAwards/> */}
       {/* - section AWARDS */}
       {/* section MAP */}
-      <SectionMap/>
+      {/* <SectionMap/> */}
       {/* - section MAP */}
       {/* section FORM */}
       <SectionForm/>

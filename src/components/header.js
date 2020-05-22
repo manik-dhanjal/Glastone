@@ -8,7 +8,7 @@ const Header=()=>{
     <div className="container-fluid header__controls">
       <div className="row justify-content-between align-items-center">
         <div className="col text-left header__col-left"><a className="logo" href="homepage-slider-4.html">
-            <div className="logo__text"><span className="logo__text-title">Cassio</span></div></a>
+            <div className="logo__text"><span className="logo__text-title">About us</span></div></a>
         </div>
         <div className="col-auto text-center" onClick={()=>setIsOpen(!IsOpen)}>
           <div className="header__burger"  id="js-burger">
