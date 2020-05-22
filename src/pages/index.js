@@ -46,7 +46,7 @@ const Home=()=>{
       
       {/* - section HEADER #1 */}
       {/* section LATEST PROJECTS */}
-      {/* <SectionProjects/> */}
+      <SectionProjects/>
       {/* - section HEADER #2 */}
       {/* section AWARDS */}
       {/* <SectionAwards/> */}

@@ -18,7 +18,7 @@ const SectionProjects=()=>{
  <section className="section section-portfolio bg-dark">
         <div className="swiper-container slider slider-projects js-slider-projects">
           <div className="swiper-wrapper">
-            <div className="swiper-slide"><a className="figure-portfolio figure-portfolio-item_hover" href="project-1.html" data-pjax-link="flyingHeading">
+            {/* <div className="swiper-slide"><a className="figure-portfolio figure-portfolio-item_hover" href="project-1.html" data-pjax-link="flyingHeading">
                 <div className="figure-portfolio__wrapper-img">
                   <div ><img src="img/projects/bg-1-thumb_vertical.jpg" alt width={1200} height={1800} /></div>
                   <div className="figure-portfolio__content bg-dark-3">
@@ -95,15 +95,15 @@ const SectionProjects=()=>{
                     <div className="figure-portfolio__curtain bg-dark-3" />
                   </div>
                 </div></a>
-            </div>
+            </div> */}
           </div>
           <div className="container slider__footer-relative">
             <div className="row align-items-center justify-content-between">
               <div className="col-auto col-md-4 text-left slider__footer-col">
                 <div className="slider__arrows">
-                  <div className="slider__arrow js-slider-projects__prev"><i className="material-icons">keyboard_arrow_left</i></div>
+                  <div className="slider__arrow js-slider-projects__prev"><i className="material-icons">&#x2190;</i></div>
                   <div className="slider__arrows-divider" />
-                  <div className="slider__arrow js-slider-projects__next"><i className="material-icons">keyboard_arrow_right</i></div>
+                  <div className="slider__arrow js-slider-projects__next"><i className="material-icons">&#x2192;</i></div>
                 </div>
               </div>
               {/* - slider nav arrows */}
