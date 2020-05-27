@@ -11,10 +11,10 @@ export default function SectionProjects() {
     dots: false,
     infinite: true,
     speed: 500,
-    slidesToShow: 5,
+    slidesToShow: 4,
     slidesToScroll: 1,
     arrows:true,
-    centerPadding:50,
+    centerPadding:0,
     
     responsive: [
       {
@@ -61,26 +61,26 @@ export default function SectionProjects() {
 
       <Slider {...settings}>
         <div>
-          <h3><img src="img/INTERIORS - SPR 1.jpg"></img></h3>
+          <h3><img src="img/INTERIORS - SPR 1.jpg" style={{width:'400px',height:'530px'}}></img></h3>
         </div>
         <div>
-          <h3><img src="img/WATER BODIES - SPR2.jpg" ></img></h3>
+          <h3><img src="img/WATER BODIES - SPR2.jpg"  style={{width:'400px',height:'530px'}}></img></h3>
         </div>
         <div>
-          <h3><img src="img/SWIMMING POOLS - SPR3.jpg" ></img></h3>
+          <h3><img src="img/SWIMMING POOLS - SPR3.jpg"  style={{width:'400px',height:'530px'}}></img></h3>
         </div>
         <div>
-        <h3><img src="img/EXTERIORS - SPR4.jpg" ></img></h3>
+        <h3><img src="img/EXTERIORS - SPR4.jpg"  style={{width:'400px',height:'530px'}} ></img></h3>
         </div>
         <div>
-        <h3><img src="img/WATER BODIES - SPR5.jpg" ></img></h3>
+        <h3><img src="img/WATER BODIES - SPR5.jpg"  style={{width:'400px',height:'530px'}}></img></h3>
         </div>
         <div>
-        <h3><img src="img/EXTERIORS - SPR6.jpg" style={{width:'345px',height:'517px'}} ></img></h3>
+        <h3><img src="img/EXTERIORS - SPR6.jpg"  style={{width:'400px',height:'530px'}} ></img></h3>
         </div>
       
       </Slider>
     </div>
-    </div>
+     </div>
   );
   };

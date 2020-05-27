@@ -3,6 +3,7 @@ import React,{useState} from 'react'
 const Header=()=>{
   
   const [IsOpen, setIsOpen] = useState(false)
+  const [IsScrolled, setIsScrolled] = useState(false)
     return(
         <header className="header header_fixed js-sticky-header header_color-white" data-header-animation data-header-sticky-theme="bg-dark-2">
     <div className="container-fluid header__controls">

@@ -3,8 +3,8 @@ import React from 'react'
 const SectionForm=()=>{
     return(
         <div className="bg-dark-2">
-        <section className="section section-form text-center section_pb-small section-offset_top">
-          <div className="container border-radius section-offset__content bg-dark-3">
+        <section className="section section-form text-center section_pb-small section-offset_top" style={{position:'relative',top:'120px',"overflowY":"hidden"}}>
+          <div className="container border-radius section-offset__content bg-dark-3" style={{position:'relative',top:'120px',"overflowY":"hidden"}}>
             <div className="row justify-content-center">
               <div className="col-sm-10">
                 <form className="form form-contact js-ajax-form" action="https://artemsemkin.com/cassio/html/mail.php" method="POST" data-message-success="Thanks for your message! We will reply you as soon as possible." data-message-error="Something went wrong :( Please contact me directly on cassio@example.com">
