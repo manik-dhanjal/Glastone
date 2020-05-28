@@ -3,7 +3,7 @@ import React,{useState} from 'react'
 const Header=()=>{
   
   const [IsOpen, setIsOpen] = useState(false)
-  const [IsScrolled, setIsScrolled] = useState(false)
+ 
     return(
         <header className="header header_fixed js-sticky-header header_color-white" data-header-animation data-header-sticky-theme="bg-dark-2">
     <div className="container-fluid header__controls">
@@ -29,7 +29,7 @@ const Header=()=>{
       <div className="header__overlay-menu-back material-icons" id="js-submenu-back">arrow_back</div>
       {/* - back button */}
     </div>
-    <div className="header__wrapper-overlay-menu container-fluid bg-dark-2 color-white" style={IsOpen?{ opacity: '1', visibility: 'visible', zIndex: '500'}: {visibility:'none'}}>
+    <div className="header__wrapper-overlay-menu container-fluid bg-dark-2 color-white" style={IsOpen?{ opacity: '1', visibility: 'visible', zIndex: '500'}: {display:'none'}}>
       <div className="header__wrapper-menu">
         <ul className="menu-overlay js-menu-overlay">
           <li className="menu-item-has-children"><a href="#" data-letter="H">

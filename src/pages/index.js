@@ -2,6 +2,7 @@ import React from "react"
 
 import '../dist/css/main.css';
 import '../dist/css/vendor.css';
+import '../dist/css/slider.css';
 import Header from '../components/header'
 import Footer from '../components/footer'
 import SectionContacts from '../components/sectionContacts'
@@ -77,3 +78,5 @@ const Home=()=>{
 }
 
 export default Home 
+
+

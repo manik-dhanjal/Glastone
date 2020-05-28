@@ -5,7 +5,6 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-
 export default function SectionProjects() {
   var settings = {
     dots: false,
@@ -60,24 +59,75 @@ export default function SectionProjects() {
       </section>
 
       <Slider {...settings}>
-        <div>
-          <h3><img src="img/INTERIORS - SPR 1.jpg" style={{width:'400px',height:'530px'}}></img></h3>
-        </div>
-        <div>
-          <h3><img src="img/WATER BODIES - SPR2.jpg"  style={{width:'400px',height:'530px'}}></img></h3>
-        </div>
-        <div>
-          <h3><img src="img/SWIMMING POOLS - SPR3.jpg"  style={{width:'400px',height:'530px'}}></img></h3>
-        </div>
-        <div>
-        <h3><img src="img/EXTERIORS - SPR4.jpg"  style={{width:'400px',height:'530px'}} ></img></h3>
-        </div>
-        <div>
-        <h3><img src="img/WATER BODIES - SPR5.jpg"  style={{width:'400px',height:'530px'}}></img></h3>
-        </div>
-        <div>
-        <h3><img src="img/EXTERIORS - SPR6.jpg"  style={{width:'400px',height:'530px'}} ></img></h3>
-        </div>
+      
+      <div className="parent">
+  <div className="img">
+    <img src="https://images.pexels.com/photos/1034662/pexels-photo-1034662.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" className="img" alt="" />
+  </div>
+  <div className="info">
+    <h3>House Interior</h3>
+    <h2>Luxuory</h2>
+  </div>
+  <div className="curtain">
+  </div>
+</div>
+<div className="parent">
+  <div className="img">
+    <img src="https://images.pexels.com/photos/1034662/pexels-photo-1034662.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" className="img" alt="" />
+  </div>
+  <div className="info">
+    <h3>House Interior</h3>
+    <h2>Luxuory</h2>
+  </div>
+  <div className="curtain">
+  </div>
+</div>
+<div className="parent">
+  <div className="img">
+    <img src="https://images.pexels.com/photos/1034662/pexels-photo-1034662.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" className="img" alt="" />
+  </div>
+  <div className="info">
+    <h3>House Interior</h3>
+    <h2>Luxuory</h2>
+  </div>
+  <div className="curtain">
+  </div>
+</div>
+<div className="parent">
+  <div className="img">
+    <img src="https://images.pexels.com/photos/1034662/pexels-photo-1034662.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" className="img" alt="" />
+  </div>
+  <div className="info">
+    <h3>House Interior</h3>
+    <h2>Luxuory</h2>
+  </div>
+  <div className="curtain">
+  </div>
+</div>
+<div className="parent">
+  <div className="img">
+    <img src="https://images.pexels.com/photos/1034662/pexels-photo-1034662.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" className="img" alt="" />
+  </div>
+  <div className="info">
+    <h3>House Interior</h3>
+    <h2>Luxuory</h2>
+  </div>
+  <div className="curtain">
+  </div>
+</div>
+<div className="parent">
+  <div className="img">
+    <img src="https://images.pexels.com/photos/1034662/pexels-photo-1034662.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" className="img" alt="" />
+  </div>
+  <div className="info">
+    <h3>House Interior</h3>
+    <h2>Luxuory</h2>
+  </div>
+  <div className="curtain">
+  </div>
+</div>
+ 
+
       
       </Slider>
     </div>
