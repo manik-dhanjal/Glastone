@@ -1,15 +1,25 @@
-import React,{useState} from 'react'
+import React,{useState,useEffect} from 'react'
 
 const Header=()=>{
   
   const [IsOpen, setIsOpen] = useState(false)
- 
+  const [IsScroll, setIsScroll] = useState(false)
+  
+  useEffect(() => {
+    window.addEventListener('scroll',(e)=>{
+      if(window.pageYOffset>10)
+      {
+        setIsScroll(true)
+      }
+      else setIsScroll(false);
+    });
+  });
     return(
-        <header className="header header_fixed js-sticky-header header_color-white" data-header-animation data-header-sticky-theme="bg-dark-2">
+        <header className={`header header_fixed js-sticky-header header_color-white ${IsScroll?" header_sticky bg-dark-2":null}`} data-header-animation data-header-sticky-theme="bg-dark-2">
     <div className="container-fluid header__controls">
       <div className="row justify-content-between align-items-center">
         <div className="col text-left header__col-left"><a className="logo" href="homepage-slider-4.html">
-            <div className="logo__text"><span className="logo__text-title">About us</span></div></a>
+            <div className="logo__text animate" style={IsOpen?{"transform":" translateX(-300px)",visibility:'none'}: {visibility:'visible',"transform":" translateX(0)"}}><span className="logo__text-title">About us</span></div></a>
         </div>
         <div className="col-auto text-center" onClick={()=>setIsOpen(!IsOpen)}>
           <div className="header__burger"  id="js-burger">
@@ -18,7 +28,7 @@ const Header=()=>{
           </div>
         </div>
         <div className="col d-none d-md-block text-right header__col-right">
-          <ul className="social">
+          <ul className="social animate " style={IsOpen?{"transform":" translateX(300px)",visibility:'none'}: {visibility:'visible',"transform":" translateX(0)"}}>
             <li className="social__item"><a className="fa fa-facebook-f" href="#" /></li>
             <li className="social__item"><a className="fa fa-twitter" href="#" /></li>
             <li className="social__item"><a className="fa fa-instagram" href="#" /></li>
@@ -29,7 +39,7 @@ const Header=()=>{
       <div className="header__overlay-menu-back material-icons" id="js-submenu-back">arrow_back</div>
       {/* - back button */}
     </div>
-    <div className="header__wrapper-overlay-menu container-fluid bg-dark-2 color-white" style={IsOpen?{ opacity: '1', visibility: 'visible', zIndex: '500'}: {display:'none'}}>
+    <div className={`header__wrapper-overlay-menu container-fluid bg-dark-2 color-white ${IsOpen?" opened":null} `}style={IsOpen?{ opacity: '1', visibility: 'visible', zIndex: '500',transform:"translateY(0vh)"}: {opacity: '1',transform:"translateY(-100vh)"}}>
       <div className="header__wrapper-menu">
         <ul className="menu-overlay js-menu-overlay">
           <li className="menu-item-has-children"><a href="#" data-letter="H">
@@ -132,14 +142,15 @@ const Header=()=>{
                 <li className="social__item"><a className="fa fa-behance" href="#" /></li>
               </ul>
             </div>
-            <div className="col-lg-4 text-left">
-              <p className="split-text js-split-text" data-split-text-type="lines" data-split-text-set="lines">- Registered office - 47A, Gautam Nagar, New Delhi - 110 049. - Works - 1-7 & 1-13, Site-C, Surajpur Industrial Area Greater Noida - 201 306.</p>
+            <div className="col-lg-4 text-left d-lg-flex align-items-center">
+              <p className="split-text js-split-text" data-split-text-type="lines" data-split-text-set="lines">47A, Gautam Nagar,<br/> New Delhi - 110 049.</p>
             </div>
-            <div className="col-lg-4 text-center">
-              <p className="split-text js-split-text" data-split-text-type="lines" data-split-text-set="lines"><a href="https://artemsemkin.com/cdn-cgi/l/email-protection#2a595f5a5a45585e6a4b585e4f47594f4741434404494547"><span className="__cf_email__" data-cfemail="681b1d1818071a1c28091a1c0d051b0d05030106460b0705">[email&nbsp;protected]</span></a></p>
+            <div className="col-lg-4 text-center  ">
+              <p className="split-text js-split-text" data-split-text-type="lines" data-split-text-set="lines"><a href="https://artemsemkin.com/cdn-cgi/l/email-protection#2a595f5a5a45585e6a4b585e4f47594f4741434404494547"><span className="__cf_email__" data-cfemail="681b1d1818071a1c28091a1c0d051b0d05030106460b0705">glastonemosiac@gmail.com</span></a></p>
+              <p className="split-text js-split-text" data-split-text-type="lines" data-split-text-set="lines"><a href="https://artemsemkin.com/cdn-cgi/l/email-protection#2a595f5a5a45585e6a4b585e4f47594f4741434404494547"><span className="__cf_email__" data-cfemail="681b1d1818071a1c28091a1c0d051b0d05030106460b0705">vipul.gupta@glastonemosiac.com</span></a></p>
             </div>
-            <div className="col-lg-4 text-right">
-              <p className="split-text js-split-text" data-split-text-type="lines" data-split-text-set="lines">+91 96250 64678</p>
+            <div className="col-lg-4 text-right d-lg-flex align-items-center justify-content-end">
+              <p className="split-text js-split-text" data-split-text-type="lines" data-split-text-set="lines">+91 9625064678</p>
             </div>
           </div>
         </div>

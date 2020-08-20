@@ -1,14 +1,15 @@
 import React from "react"
 
-import '../dist/css/main.css';
-import '../dist/css/vendor.css';
 import '../dist/css/slider.css';
+import '../dist/css/vendor.css';
+import '../dist/css/custom.css';
+import '../dist/css/main.css';
 import Header from '../components/header'
 import Footer from '../components/footer'
 import SectionContacts from '../components/sectionContacts'
 import SectionForm from '../components/sectionForm'
 import SectionMap from '../components/sectionMap'
-import SectionAwards from '../components/sectionAwards'
+import SectionClients from '../components/sectionClients'
 import SectionProjects from "../components/sectionProjects";
 import SectionIntro from "../components/sectionIntro"
 import SectionServices from '../components/sectionServices'
@@ -50,10 +51,10 @@ const Home=()=>{
       <SectionProjects/>
       {/* - section HEADER #2 */}
       {/* section AWARDS */}
-      {/* <SectionAwards/> */}
+      <SectionClients/>
       {/* - section AWARDS */}
       {/* section MAP */}
-      {/* <SectionMap/> */}
+      <SectionMap/>
       {/* - section MAP */}
       {/* section FORM */}
       <SectionForm/>

@@ -3,13 +3,13 @@ import '../dist/css/main.css'
 
 const Footer=()=>{
 return(
-    <footer className="footer container-fluid">
+    <footer className="footer container-fluid bg-dark">
       <div className="footer__area-primary">
         <div className="footer__row row">
           <div className="col-lg-4 text-left footer__column">
             <section className="widget widget_cassio_logo"><a className="logo" href="homepage-slider-4.html">
                 <div className="logo__text"><span className="logo__text-title">ABOUT US</span></div></a>
-              <p>MOSAICS BY GLASTONE</p>
+              <p className=" text-white">Mosiacs By Glastone</p>
             </section>
           </div>
           <div className="col-lg-4 text-center footer__column">
@@ -24,9 +24,11 @@ return(
           </div>
           <div className="col-lg-4 text-right footer__column">
             <section className="widget widget_text">
-              <div className="textwidget">
-                <p>+91 9625064678<br/>+91 98100 21541<br/> +91 88103 19691 <br/> +91 120 41 56317</p>
-                <p><a href="https://artemsemkin.com/cdn-cgi/l/email-protection#30434540405f424470514244555d43555d5b595e1e535f5d"><span className="__cf_email__" data-cfemail="c5b6b0b5b5aab7b185a4b7b1a0a8b6a0a8aeacabeba6aaa8">[email&nbsp;protected]</span></a></p>
+              <div className="textwidget ">
+                <p className=" text-white">+91 9625064678<br/>+91 98100 21541<br/> +91 88103 19691 <br/> +91 120 41 56317</p>
+                <div className="figure-contact__item"><a href="#"><span className="__cf_email__" data-cfemail="6e0d0f1d1d07012e0b160f031e020b400d0103">glastonemosiac@gmail.com</span></a></div>
+                <div className="figure-contact__item"><a href="#"><span className="__cf_email__" data-cfemail="6e0d0f1d1d07012e0b160f031e020b400d0103">vipul.gupta@glastonemosiac.com</span></a></div>
+               
               </div>
             </section>
           </div>
