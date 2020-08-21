@@ -1,4 +1,7 @@
 import React from "react";
+import '../dist/css/slider.css';
+import '../dist/css/vendor.css';
+import '../dist/css/main.css';
 import Header from '../components/global/light-header'
 import Footer from '../components/global/light-footer'
 import SectionHeader from '../components/contact/section-header'
