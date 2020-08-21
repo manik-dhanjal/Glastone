@@ -2,18 +2,18 @@ import React from "react"
 
 import '../dist/css/slider.css';
 import '../dist/css/vendor.css';
-import '../dist/css/custom.css';
+import '../dist/css/home-custom.css';
 import '../dist/css/main.css';
-import Header from '../components/header'
-import Footer from '../components/footer'
-import SectionContacts from '../components/sectionContacts'
-import SectionForm from '../components/sectionForm'
-import SectionMap from '../components/sectionMap'
-import SectionClients from '../components/sectionClients'
-import SectionProjects from "../components/sectionProjects";
-import SectionIntro from "../components/sectionIntro"
-import SectionServices from '../components/sectionServices'
-import SectionAbout from '../components/sectionAbout'
+import Header from '../components/global/dark-header'
+import Footer from '../components/global/dark-footer'
+import SectionContacts from '../components/homepage/sectionContacts'
+import SectionForm from '../components/homepage/sectionForm'
+import SectionMap from '../components/homepage/sectionMap'
+import SectionClients from '../components/homepage/sectionClients'
+import SectionProjects from "../components/homepage/sectionProjects";
+import SectionIntro from "../components/homepage/sectionIntro"
+import SectionServices from '../components/homepage/sectionServices'
+import SectionAbout from '../components/homepage/sectionAbout'
 const Home=()=>{
     return(
         <div>
