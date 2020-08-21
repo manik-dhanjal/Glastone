@@ -1,0 +1,138 @@
+
+.sidebar{
+    margin-top:0px !important;
+}
+
+.section-map iframe{
+    height: 100%;
+}
+.section-map{
+    padding-top:144px;
+    height: 100vh;
+}
+.add-margin{
+    margin-bottom: 25px;
+}
+.add-title{
+    color: rgb(198, 159, 115)
+}
+.text-white
+{
+    color: white;
+}
+ .project-head{
+    font-size: 35px;
+}
+.header__wrapper-overlay-menu ,.animate{
+    transition: all 1s ease-in-out;
+}
+.brand-logo-container
+{
+    display: grid;
+grid-template-columns: repeat(6,150px);
+grid-gap: 30px;
+margin-top:50px;
+justify-content: center;
+}
+.our-clients{
+    padding-top:144px;
+}
+
+.slick-prev::before{
+  
+    content:"\2190" ;
+    }
+  
+.slick-next::before ,.slick-prev::before{
+  background:transparent;
+  color: rgb(201, 188, 174);
+  font-family: 'nunito'!important;
+  font-size: 35px !important;
+  }
+  @media screen and (max-width:1200px)
+  {
+    .brand-logo-container
+    {
+        
+    grid-template-columns: repeat(5,150px);
+
+    }
+    .section-map{
+      
+        height: 100vh;
+    }
+  }
+  @media screen and (max-width:1025px)
+  {
+    .brand-logo-container
+    {
+        
+    grid-template-columns: repeat(4,150px);
+    }
+    .section-intro__heading{
+        font-size: 60px!important;
+    }
+    
+    .section-services__heading{
+        font-size: 30px;;
+    }
+    .section-about__heading{
+        width: 90%!important;
+    }
+    .section-about__decor{
+        top:-70px;
+    }
+    .section-about__wrapper-content{
+        margin-top: 70px;
+    }
+    .form__heading{
+        font-size:30px;
+    }
+    .counter__number{
+        font-size:60px !important;
+    }
+  }
+  @media screen and (max-width:768px)
+  {
+    .brand-logo-container
+    {      
+    grid-template-columns: repeat(3,150px);
+    }
+  }
+  @media screen and (max-width:600px)
+  {
+   h3{
+       font-size:30px !important;
+   }
+   .brand-logo-container
+   {      
+   grid-template-columns: repeat(4,90px);
+   }
+   
+  }
+  @media screen and (max-width:500px)
+  {
+   h3{
+       font-size:30px !important;
+   }
+   .brand-logo-container
+   {      
+   grid-template-columns: repeat(4,90px);
+   grid-gap:15px;
+   }
+   
+  }
+  @media screen and (max-width:450px)
+  {
+   h3{
+       font-size:7vw !important;
+   }
+   .brand-logo-container
+   {      
+   grid-template-columns: repeat(3,90px);
+   grid-gap:15px;
+   }
+   .section-intro__heading {
+    font-size: 50px !important;
+}
+  }
