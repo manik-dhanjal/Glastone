@@ -3,7 +3,7 @@ import React from "react";
 
 const Masthead =()=>{
     return (
-       <section className="section section-masthead section_pt-large text-center" data-os-animation="data-os-animation">
+       <section className="section section-masthead section_pt-large text-center" >
         <div className="section-masthead__inner container">
           <header className="row section-masthead__header justify-content-center">
             <div className="col-lg-10">
@@ -12,8 +12,8 @@ const Masthead =()=>{
             </div>
           </header>
         </div>
-        <h1>879465132</h1>
       </section>
+     
     )
 }
 export default Masthead;

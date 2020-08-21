@@ -89,7 +89,7 @@ export default function SectionProjects() {
       
       <div className="parent">
   <div className="img">
-    <img src="https://images.pexels.com/photos/1034662/pexels-photo-1034662.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" className="img" alt="" />
+    <img src="/img/" className="img" alt="" />
   </div>
   <div className="info">
     <h3>House Interior1</h3>

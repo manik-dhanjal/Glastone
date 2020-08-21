@@ -19,7 +19,7 @@ useEffect(() => {
     <div className="container-fluid header__controls">
       <div className="row justify-content-between align-items-center">
         <div className="col text-left header__col-left"><a className="logo" href="homepage-slider-4.html">
-            <div className="logo__text" style={IsOpen?{"transform":" translateX(-300px)",visibility:'none'}: {visibility:'visible',"transform":" translateX(0)"}}><span class="logo__text-title">Cassio</span></div></a>
+            <div className="logo__text" style={IsOpen?{"transform":" translateX(-300px)",visibility:'none'}: {visibility:'visible',"transform":" translateX(0)"}}><span class="logo__text-title">glastone</span></div></a>
         </div>
         <div className="col-auto text-center" onClick={()=>setIsOpen(!IsOpen)}>
           <div className="header__burger" id="js-burger">
@@ -143,13 +143,13 @@ useEffect(() => {
               </ul>
             </div>
             <div className="col-lg-4 text-left">
-              <p className="split-text js-split-text" data-split-text-type="lines" data-split-text-set="lines">4967 Poe Lane Lenexa, KS 66215</p>
+              <p className="split-text js-split-text" data-split-text-type="lines" data-split-text-set="lines">47A, Gautam Nagar,<br/> New Delhi - 110 049.</p>
             </div>
             <div className="col-lg-4 text-center">
-              <p className="split-text js-split-text" data-split-text-type="lines" data-split-text-set="lines"><a href="https://artemsemkin.com/cdn-cgi/l/email-protection#b5c6c0c5c5dac7c1f5d4c7c1d0d8c6d0d8dedcdb9bd6dad8"><span class="__cf_email__" data-cfemail="a0d3d5d0d0cfd2d4e0c1d2d4c5cdd3c5cdcbc9ce8ec3cfcd">[email&#160;protected]</span></a></p>
+              <p className="split-text js-split-text" data-split-text-type="lines" data-split-text-set="lines"><a href="https://artemsemkin.com/cdn-cgi/l/email-protection#b5c6c0c5c5dac7c1f5d4c7c1d0d8c6d0d8dedcdb9bd6dad8"><span class="__cf_email__" data-cfemail="a0d3d5d0d0cfd2d4e0c1d2d4c5cdd3c5cdcbc9ce8ec3cfcd">glastonemosiac@gmail.com</span></a></p>
             </div>
             <div className="col-lg-4 text-right">
-              <p className="split-text js-split-text" data-split-text-type="lines" data-split-text-set="lines">+1 913 522 5256</p>
+              <p className="split-text js-split-text" data-split-text-type="lines" data-split-text-set="lines">+91 9625064678</p>
             </div>
           </div>
         </div>

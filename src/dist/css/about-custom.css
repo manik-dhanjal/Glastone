@@ -1,0 +1,16 @@
+.team-container{
+    display: flex;
+    flex-wrap:wrap;
+}
+h1{
+    font-size:60px ;
+}
+h3{
+    font-size:35px
+}
+h4{
+    font-size: 30px;
+}
+.button__icon{
+    font-size:20px;
+}
