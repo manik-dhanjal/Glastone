@@ -142,14 +142,13 @@ const Header=()=>{
                 <li className="social__item"><a className="fa fa-behance" href="#" /></li>
               </ul>
             </div>
-            <div className="col-lg-4 text-left d-lg-flex align-items-center">
+            <div className="col-lg-4 text-left ">
               <p className="split-text js-split-text" data-split-text-type="lines" data-split-text-set="lines">47A, Gautam Nagar,<br/> New Delhi - 110 049.</p>
             </div>
             <div className="col-lg-4 text-center  ">
               <p className="split-text js-split-text" data-split-text-type="lines" data-split-text-set="lines"><a href="https://artemsemkin.com/cdn-cgi/l/email-protection#2a595f5a5a45585e6a4b585e4f47594f4741434404494547"><span className="__cf_email__" data-cfemail="681b1d1818071a1c28091a1c0d051b0d05030106460b0705">glastonemosiac@gmail.com</span></a></p>
-              <p className="split-text js-split-text" data-split-text-type="lines" data-split-text-set="lines"><a href="https://artemsemkin.com/cdn-cgi/l/email-protection#2a595f5a5a45585e6a4b585e4f47594f4741434404494547"><span className="__cf_email__" data-cfemail="681b1d1818071a1c28091a1c0d051b0d05030106460b0705">vipul.gupta@glastonemosiac.com</span></a></p>
             </div>
-            <div className="col-lg-4 text-right d-lg-flex align-items-center justify-content-end">
+            <div className="col-lg-4 text-right ">
               <p className="split-text js-split-text" data-split-text-type="lines" data-split-text-set="lines">+91 9625064678</p>
             </div>
           </div>

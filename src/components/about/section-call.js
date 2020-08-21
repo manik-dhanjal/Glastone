@@ -22,7 +22,7 @@ const SectionAction=()=>{
           </div>
         </div>
         <div class="section-image__wrapper section-image__wrapper_absolute" data-art-parallax="background" data-art-parallax-factor="0.1">
-          <div class="art-parallax__bg lazy-bg" ><img src="img/assets/sectionBlog/img-3.jpg"/></div>
+          <div class="art-parallax__bg lazy-bg" ><img src="/img/assets/sectionBlog/img-3.jpg"/></div>
           <div class="section-image__overlay overlay overlay_dark"></div>
         </div>
       </section>
