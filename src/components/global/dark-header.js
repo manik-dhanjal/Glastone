@@ -18,8 +18,8 @@ const Header=()=>{
         <header className={`header header_fixed js-sticky-header header_color-white ${IsScroll?" header_sticky bg-dark-2":null}`} data-header-animation data-header-sticky-theme="bg-dark-2">
     <div className="container-fluid header__controls">
       <div className="row justify-content-between align-items-center">
-        <div className="col text-left header__col-left"><a className="logo" href="homepage-slider-4.html">
-            <div className="logo__text animate" style={IsOpen?{"transform":" translateX(-300px)",visibility:'none'}: {visibility:'visible',"transform":" translateX(0)"}}><span className="logo__text-title">About us</span></div></a>
+        <div className="col text-left header__col-left"><a className="logo" href="/">
+            <div className="logo__text animate" style={IsOpen?{"transform":" translateX(-300px)",visibility:'none'}: {visibility:'visible',"transform":" translateX(0)"}}><span className="logo__text-title">Glastone</span></div></a>
         </div>
         <div className="col-auto text-center" onClick={()=>setIsOpen(!IsOpen)}>
           <div className="header__burger"  id="js-burger">
@@ -122,10 +122,10 @@ const Header=()=>{
               </li>
             </ul>
           </li>
-          <li><a href="about.html" data-letter="A" data-pjax-link="overlayMenu">
+          <li><a href="/about" data-letter="A" data-pjax-link="overlayMenu">
               <div className="menu-overlay__item-wrapper js-text-to-fly split-text js-split-text" data-split-text-type="lines, words, chars">About</div></a>
           </li>
-          <li><a href="contacts.html" data-letter="C" data-pjax-link="overlayMenu">
+          <li><a href="/contacts" data-letter="C" data-pjax-link="overlayMenu">
               <div className="menu-overlay__item-wrapper js-text-to-fly split-text js-split-text" data-split-text-type="lines, words, chars">Contacts</div></a>
           </li>
         </ul>

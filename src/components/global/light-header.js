@@ -18,7 +18,7 @@ useEffect(() => {
     <header className={`header header_fixed js-sticky-header ${IsScroll?" header_sticky bg-white":null}`} data-header-animation data-header-sticky-theme="bg-white">
     <div className="container-fluid header__controls">
       <div className="row justify-content-between align-items-center">
-        <div className="col text-left header__col-left"><a className="logo" href="homepage-slider-4.html">
+        <div className="col text-left header__col-left"><a className="logo" href="/">
             <div className="logo__text" style={IsOpen?{"transform":" translateX(-300px)",visibility:'none'}: {visibility:'visible',"transform":" translateX(0)"}}><span class="logo__text-title">glastone</span></div></a>
         </div>
         <div className="col-auto text-center" onClick={()=>setIsOpen(!IsOpen)}>
@@ -122,10 +122,10 @@ useEffect(() => {
               </li>
             </ul>
           </li>
-          <li><a href="about.html" data-letter="A" data-pjax-link="overlayMenu">
+          <li><a href="/about" data-letter="A" data-pjax-link="overlayMenu">
               <div className="menu-overlay__item-wrapper js-text-to-fly split-text js-split-text" data-split-text-type="lines, words, chars">About</div></a>
           </li>
-          <li><a href="contacts.html" data-letter="C" data-pjax-link="overlayMenu">
+          <li><a href="/contacts" data-letter="C" data-pjax-link="overlayMenu">
               <div className="menu-overlay__item-wrapper js-text-to-fly split-text js-split-text" data-split-text-type="lines, words, chars">Contacts</div></a>
           </li>
         </ul>
