@@ -2,10 +2,9 @@ import React from "react";
 import Header from '../components/global/light-header'
 import Footer from '../components/global/light-footer'
 import SectionHeader from '../components/contact/section-header'
-import SectionMap from '../components/contact/Section-map'
-import SectionForm from '../components/contact/Section-form'
-import SectionContact from '../components/contact/Section-contacts'
-import SectionContacts from "../components/contact/Section-contacts";
+import SectionMap from '../components/contact/section-map'
+import SectionForm from '../components/contact/section-form'
+import SectionContacts from "../components/contact/section-contacts";
 const Contacts =()=>{
     return(
         <div data-barba="wrapper">
