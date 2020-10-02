@@ -19,7 +19,7 @@ useEffect(() => {
     <div className="container-fluid header__controls">
       <div className="row justify-content-between align-items-center">
         <div className="col text-left header__col-left"><a className="logo" href="/">
-            <div className="logo__text" style={{transition:"1s ease"}} style={IsOpen?{"transform":" translateX(-300px)",visibility:'none',transition:"1s ease"}: {visibility:'visible',"transform":" translateX(0)",transition:"1s ease"}}><span class="logo__text-title">glastone</span></div></a>
+            <div className="logo__text" style={{transition:"1s ease"}} style={IsOpen?{"transform":" translateX(-300px)",visibility:'none',transition:"1s ease"}: {visibility:'visible',"transform":" translateX(0)",transition:"1s ease"}}><span className="logo__text-title">glastone</span></div></a>
         </div>
         <div className="col-auto text-center" onClick={()=>setIsOpen(!IsOpen)}>
           <div className="header__burger" id="js-burger">
@@ -32,7 +32,7 @@ useEffect(() => {
             <li className="social__item"><a className="fa fa-facebook-f" href="#"></a></li>
             <li className="social__item"><a className="fa fa-twitter" href="#"></a></li>
             <li className="social__item"><a className="fa fa-instagram" href="#"></a></li>
-            <li className="social__item"><a class="fa fa-behance" href="#"></a></li>
+            <li className="social__item"><a className="fa fa-behance" href="#"></a></li>
           </ul>
         </div>
       </div>

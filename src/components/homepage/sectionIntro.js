@@ -24,8 +24,8 @@ const SectionIntro=()=>{
         <div className="section-masthead__inner section-intro__inner section-fullheight__inner container">
           <header className="row section-intro__header section-masthead__header">
             <div className="col-lg-6" >
-              <div className="subheading split-text js-split-text section-masthead__subheading section-intro__subheading" data-split-text-type="lines, words, chars" data-split-text-set="chars"><Sidebar class="sidebar" initialPose="exit" pose="enter"> <SplitText charPoses={charPoses}>Architects of Splended tiles</SplitText>  </Sidebar></div>
-              <h1 className="section-masthead__heading section-intro__heading split-text js-split-text text-xl" data-split-text-type="lines, words, chars" data-split-text-set="chars"> <Sidebar class="sidebar" initialPose="exit" pose="enter"> <SplitText charPoses={charPoses}>GLASTONE</SplitText>  </Sidebar></h1>
+              <div className="subheading split-text js-split-text section-masthead__subheading section-intro__subheading" data-split-text-type="lines, words, chars" data-split-text-set="chars"><Sidebar className="sidebar" initialPose="exit" pose="enter"> <SplitText charPoses={charPoses}>Architects of Splended tiles</SplitText>  </Sidebar></div>
+              <h1 className="section-masthead__heading section-intro__heading split-text js-split-text text-xl" data-split-text-type="lines, words, chars" data-split-text-set="chars"> <Sidebar className="sidebar" initialPose="exit" pose="enter"> <SplitText charPoses={charPoses}>GLASTONE</SplitText>  </Sidebar></h1>
             </div>
             <div className="col-lg-6">
             </div>

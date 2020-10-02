@@ -20,7 +20,7 @@ const SectionClient=()=>{
             <div className="brand-logo">
             <img src={`/img/assets/client-logo/${img}`} alt={img}/>
             </div>
-            )  
+            )   
             
           }
          </div>

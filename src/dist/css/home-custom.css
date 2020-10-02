@@ -28,11 +28,11 @@
 }
 .brand-logo-container
 {
-    display: grid;
-grid-template-columns: repeat(6,150px);
-grid-gap: 30px;
-margin-top:50px;
-justify-content: center;
+    display: flex;
+    flex-wrap:wrap;
+    grid-gap:30px;
+    justify-content: center;
+
 }
 .our-clients{
     padding-top:144px;
@@ -51,12 +51,12 @@ justify-content: center;
   }
   @media screen and (max-width:1200px)
   {
-    .brand-logo-container
+    /* .brand-logo-container
     {
         
     grid-template-columns: repeat(5,150px);
 
-    }
+    } */
     .section-map{
       
         height: 100vh;
@@ -64,11 +64,11 @@ justify-content: center;
   }
   @media screen and (max-width:1025px)
   {
-    .brand-logo-container
+    /* .brand-logo-container
     {
         
     grid-template-columns: repeat(4,150px);
-    }
+    } */
     .section-intro__heading{
         font-size: 60px!important;
     }
@@ -92,22 +92,22 @@ justify-content: center;
         font-size:60px !important;
     }
   }
-  @media screen and (max-width:768px)
+  /* @media screen and (max-width:768px)
   {
-    .brand-logo-container
+     .brand-logo-container
     {      
     grid-template-columns: repeat(3,150px);
-    }
-  }
+    } 
+  } */
   @media screen and (max-width:600px)
   {
    h3{
        font-size:30px !important;
    }
-   .brand-logo-container
+   /* .brand-logo-container
    {      
    grid-template-columns: repeat(4,90px);
-   }
+   } */
    
   }
   @media screen and (max-width:500px)
@@ -115,23 +115,23 @@ justify-content: center;
    h3{
        font-size:30px !important;
    }
-   .brand-logo-container
+   /* .brand-logo-container
    {      
    grid-template-columns: repeat(4,90px);
    grid-gap:15px;
    }
-   
+    */
   }
   @media screen and (max-width:450px)
   {
    h3{
        font-size:7vw !important;
    }
-   .brand-logo-container
+   /* .brand-logo-container
    {      
    grid-template-columns: repeat(3,90px);
    grid-gap:15px;
-   }
+   } */
    .section-intro__heading {
     font-size: 50px !important;
 }

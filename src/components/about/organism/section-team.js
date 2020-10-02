@@ -1,5 +1,5 @@
 import React,{useState} from "react"
-import TeamCard from "./section-team-cards"
+import TeamCard from "../molecule/section-team-cards"
 
 const SectionTeam =()=>{
     const TeamObj=[{ name:"Mark Graves",

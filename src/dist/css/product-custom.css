@@ -1,0 +1,27 @@
+.swiper
+{
+    padding:0px 30px;
+}
+ 
+.slick-next::before ,.slick-prev::before{
+    display: none;
+  }
+  .slick-slider .slick-prev, .slick-slider .slick-prev:hover{
+ 
+    background: url("/img/assets/icons/Left-arrow.png");
+  }
+  .slick-slider .slick-next, .slick-slider .slick-next:hover{
+       background: url("/img/assets/icons/Right-arrow.png");
+  }
+
+  .slick-slider .slick-next, .slick-slider .slick-prev{
+     
+      visibility: visible !important;
+      background-size: contain !important;
+      background-repeat: no-repeat!important;
+      background-position: center !important;
+  }
+.slider-container{
+    padding-bottom:5% ;
+    overflow: hidden;
+}

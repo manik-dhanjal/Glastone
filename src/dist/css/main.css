@@ -1,6 +1,10 @@
+@font-face {
+    font-family: 'Proxima Nova';
+    src: local('Proxima Nova'), url(../fonts/ProximaNova-Regular.otf) format('truetype');
+  }
 :root {
-    --font-primary: "Roboto", sans-serif;
-    --font-secondary: "Playfair Display", serif;
+    --font-primary: 'Proxima Nova';
+    --font-secondary: 'Proxima Nova';
     --color-accent-primary-1: #c69f73;
     --color-accent-primary-2: #ebe6dd;
     --color-accent-primary-3: #c9bcae;

@@ -1,5 +1,5 @@
 import React from "react"
-import '../../dist/css/main.css';
+import '../../../dist/css/main.css';
 const TeamCard=(props)=>{
     console.log(props)
 return(

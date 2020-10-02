@@ -1,0 +1,24 @@
+.figure-portfolio-item_hover:hover .figure-portfolio__curtain
+{
+    transform: skewY(-5deg) translateY(0px);
+}
+.figure-portfolio__category
+{
+    transition:0.1s ease-in-out;
+    opacity: 0;
+    transform: translateY(-20px);
+}
+.figure-portfolio-item_hover:hover .figure-portfolio__category,.figure-portfolio-item_hover:hover .figure-portfolio__header
+{
+    transform: translate(0px);
+    opacity: 1;
+}
+.figure-portfolio__header{
+    opacity: 0;
+    transform: translateX(-20px);
+    transition:0.3s ease-in-out;
+}
+.figure-portfolio__curtain
+{
+    transition:0.3s ease-in-out;
+}
