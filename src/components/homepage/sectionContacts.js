@@ -19,17 +19,19 @@ const SectionContacts=()=>{
             <div className="figure-contact">
            
               <div className="figure-contact__icon material-icons"> <FontAwesomeIcon icon={faPhoneAlt} /></div>
-                <div className="figure-contact__item">+91 9625064678</div>
-                <div className="figure-contact__item">+91 9810021541</div>
-                <div className="figure-contact__item">+91 8810319691</div>
+                <div className="figure-contact__item">+91 96250 64678</div>
+                <div className="figure-contact__item">+91 98100 21541</div>
+                <div className="figure-contact__item">+91 88103 19691</div>
+                <div className="figure-contact__item">+91 96507 89111</div>
                 <div className="figure-contact__item">+91 120 4156317</div>
             </div>
           </div>
-          <div className="col-lg-3">
+          <div className="col-lg-3" style={{padding:"0px"}}>
             <div className="figure-contact">
               <div className="figure-contact__icon material-icons"><FontAwesomeIcon icon={faEnvelope} /></div>
               <div className="figure-contact__item"><a href="#"><span className="__cf_email__" data-cfemail="6e0d0f1d1d07012e0b160f031e020b400d0103">glastonemosiac@gmail.com</span></a></div>
               <div className="figure-contact__item"><a href="#"><span className="__cf_email__" data-cfemail="6e0d0f1d1d07012e0b160f031e020b400d0103">vipul.gupta@glastonemosiac.com</span></a></div>
+              <div className="figure-contact__item"><a href="#"><span className="__cf_email__" data-cfemail="6e0d0f1d1d07012e0b160f031e020b400d0103">suresh.gupta@glastonemosaic.com</span></a></div>
             </div>
           </div>
         </div>

@@ -24,9 +24,10 @@ const Footer =()=>{
             <div className="col-lg-4 text-right footer__column">
               <section className="widget widget_text">
                 <div className="textwidget">
-                <p >+91 9625064678<br/>+91 98100 21541<br/> +91 88103 19691 <br/> +91 120 41 56317</p>
+                <p >+91 9625064678<br/>+91 98100 21541<br/> +91 88103 19691<br/>+91 96507 89111 <br/> +91 120 41 56317</p>
                 <div className="figure-contact__item"><a href="#"><span className="__cf_email__" data-cfemail="6e0d0f1d1d07012e0b160f031e020b400d0103">glastonemosiac@gmail.com</span></a></div>
                 <div className="figure-contact__item"><a href="#"><span className="__cf_email__" data-cfemail="6e0d0f1d1d07012e0b160f031e020b400d0103">vipul.gupta@glastonemosiac.com</span></a></div>
+                <div className="figure-contact__item"><a href="#"><span className="__cf_email__" data-cfemail="6e0d0f1d1d07012e0b160f031e020b400d0103">suresh.gupta@glastonemosaic.com</span></a></div>
                 </div>
               </section>
             </div>

@@ -1,15 +1,32 @@
 import React from 'react'
 import '../../dist/css/main.css'
+import styled from "styled-components"
+const SFooter=styled.footer`
+& .dark-logo{
+  width:100%;
+  margin-bottom:20px;
 
+  &>img{
+    width:100%;
+  }
+}
+& .about-text{
+  color:white;
+  font-weight:300;
+}
+`
 const Footer=()=>{
 return(
-    <footer className="footer container-fluid bg-dark">
+    <SFooter className="footer container-fluid bg-dark">
       <div className="footer__area-primary">
         <div className="footer__row row">
           <div className="col-lg-4 text-left footer__column">
             <section className="widget widget_cassio_logo"><a className="logo" href="homepage-slider-4.html">
-                <div className="logo__text"><span className="logo__text-title">ABOUT US</span></div></a>
-              <p className=" text-white">Mosiacs By Glastone</p>
+                <div className="logo__text">
+                  <div className="dark-logo"><img src="/img/logo.svg"/></div>
+                  <div className="about-text">About Us</div>
+                </div></a>
+              {/* <p className=" text-white">Mosiacs By Glastone</p> */}
             </section>
           </div>
           <div className="col-lg-4 text-center footer__column">
@@ -25,10 +42,10 @@ return(
           <div className="col-lg-4 text-right footer__column">
             <section className="widget widget_text">
               <div className="textwidget ">
-                <p className=" text-white">+91 9625064678<br/>+91 98100 21541<br/> +91 88103 19691 <br/> +91 120 41 56317</p>
+                <p className=" text-white">+91 9625064678<br/>+91 98100 21541<br/> +91 88103 19691 <br/>+91 96507 89111<br/>+91 120 41 56317</p>
                 <div className="figure-contact__item"><a href="#"><span className="__cf_email__" data-cfemail="6e0d0f1d1d07012e0b160f031e020b400d0103">glastonemosiac@gmail.com</span></a></div>
                 <div className="figure-contact__item"><a href="#"><span className="__cf_email__" data-cfemail="6e0d0f1d1d07012e0b160f031e020b400d0103">vipul.gupta@glastonemosiac.com</span></a></div>
-               
+                <div className="figure-contact__item"><a href="#"><span className="__cf_email__" data-cfemail="6e0d0f1d1d07012e0b160f031e020b400d0103">suresh.gupta@glastonemosaic.com</span></a></div>
               </div>
             </section>
           </div>
@@ -49,11 +66,11 @@ return(
             </section>
           </div>
           <div className="col-lg-6 order-lg-1 footer__column text-left">
-            <section className="widget widget_cassio_copyright"><small className="copyright">© 2020</small></section>
+            <section className="widget widget_cassio_copyright"><small className="copyright">Glastone © 2020</small></section>
           </div>
         </div>
       </div>
-    </footer>
+    </SFooter>
 )
 }
 

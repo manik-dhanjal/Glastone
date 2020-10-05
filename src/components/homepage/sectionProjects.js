@@ -74,10 +74,10 @@ export default function SectionProjects() {
         <div className="container">
           <div className="row justify-content-center">
             <div className="col-lg-8 section-content__header">
-              <div className="section-content__subheading subheading split-text js-split-text" data-split-text-type="lines" data-split-text-set="lines"><span>Our Product Range
+              <div className="section-content__subheading subheading split-text js-split-text" data-split-text-type="lines" data-split-text-set="lines"><span>OUR LATEST WORKS
 </span></div>
               <div className="split-text js-split-text project-head" data-split-text-type="lines" data-split-text-set="lines">
-                <h3 className="project-head" >We design Cutting edge products by <br/>bending imagination into reality.
+                <h3 className="project-head" >We provide the finishing touch,<br/>the final accessory to your perspectives
 </h3>
               </div>
             </div>
@@ -89,7 +89,7 @@ export default function SectionProjects() {
       
       <div className="parent">
   <div className="img">
-    <img src="/img/" className="img" alt="" />
+    <img src="https://images.pexels.com/photos/1034662/pexels-photo-1034662.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" className="img" alt="" />
   </div>
   <div className="info">
     <h3>House Interior1</h3>
