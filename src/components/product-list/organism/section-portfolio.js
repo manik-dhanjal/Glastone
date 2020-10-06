@@ -1,6 +1,6 @@
 import React, { useState ,useEffect} from "react"
 import {Link,StaticQuery} from "gatsby"
-import PortfolioGridWrapper from "../molecule/portfolio-Grid-wrapper"
+import PortfolioGridWrapper from "../molecule/portfolio-grid-wrapper"
 
 const SectionPortfolio = ({project,categories,data}) => {
   var obj = [{
