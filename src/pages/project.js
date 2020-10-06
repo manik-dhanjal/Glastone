@@ -1,33 +1,44 @@
 import React from "react"
+import '../dist/css/project-list-custom.css';
+import Layout from "../layout/light-default"
 import {graphql} from "gatsby"
-import "../dist/css/vendor.css"
-import "../dist/css/main.css"
-import '../dist/css/product-custom.css';
-import DarkLayout from "../layout/dark-default"
-import SectionMasthead from "../components/project/organism/section-masthead"
-import SectionSlider from "../components/project/organism/section-slider"
-import SectionProject from "../components/project/organism/section-product"
-const Product = ({data}) => {
-  const pageData =data.allWordpressPage.nodes[0];
-  return (
-   <DarkLayout>
-            <SectionMasthead/>
-            <SectionSlider/>
-            <SectionProject data={pageData}/>
-  </DarkLayout>
-  )
-}
-export default Product
+import SectionMasterhead from "../components/product-list/organism/section-masthead"
+import SectionPortfolio from "../components/product-list/organism/section-portfolio"
+ const ProjectList = ({data})=>{
+    const project = data.allWordpressPost.nodes
+    const categories= data.allWordpressCategory.nodes
+    console.log(project,categories)
+     return(
+        <Layout>
+             <SectionMasterhead/>
+             <SectionPortfolio project={project} categories={categories}/>
+        </Layout>
+     )
+ }
+ export default ProjectList
 
 export const query = graphql`
-query MyQuery {
-  allWordpressPage(filter: {slug: {eq: "project"}}) {
+query myQueryAndMyQuery {
+  allWordpressPost {
     nodes {
       title
-      excerpt
-      content
       slug
+      featured_media {
+        source_url
+      }
+      categories {
+        slug
+        name
+      }
+    }
+  }
+  allWordpressCategory(filter: {parent_element: {slug: {eq: "project"}}}) {
+    nodes {
+      slug
+      name
     }
   }
 }
-`
+
+      `
+    

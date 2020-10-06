@@ -14,10 +14,10 @@
     --color-accent-primary-2: #C59E72;
     --color-accent-primary-3:#C59E72;
     --color-accent-primary-4: #837567;
-    --color-accent-secondary-1: #628ab2;
-    --color-accent-secondary-2: #3c556e;
+    --color-accent-secondary-1:#C59E72;
+    --color-accent-secondary-2:#C59E72;
     --color-accent-secondary-3: #283847;
-    --color-accent-secondary-4: #162330;
+    --color-accent-secondary-4: #181818;
     --distance-max-xsmall: 60;
     --distance-max-small: 100;
     --distance-max-normal: 200;
@@ -497,16 +497,16 @@ a:focus {
     background-color: var(--color-accent-primary-4);
 }
 .button_solid.button_accent-primary-4 {
-    background-color: var(--color-accent-primary-4);
-    border-color: var(--color-accent-primary-4);
+    background-color: var(--color-accent-primary-1);
+    border-color: var(--color-accent-primary-1);
     color: #fff;
 }
 .button_solid.button_accent-primary-4:focus {
     color: #fff;
 }
 .button_solid.button_accent-primary-4:hover {
-    border-color: var(--color-accent-primary-3);
-    background-color: var(--color-accent-primary-3);
+    border-color: var(--color-accent-primary-4);
+    background-color: var(--color-accent-primary-4);
 }
 .button_solid.button_accent-secondary-1 {
     background-color: var(--color-accent-secondary-1);

@@ -38,7 +38,7 @@ const MenuOnClick=()=>{
     <div className="container-fluid header__controls">
       <div className="row justify-content-between align-items-center">
         <div className="col text-left header__col-left"><Link className="logo" href="/">
-            <Logo className="animate" IsOpen={IsOpen}><span className="logo-img"><img src="/img/Logo.svg"/></span><span className="text">About Us</span></Logo></Link>
+            <Logo className="animate" IsOpen={IsOpen}><span className="logo-img"><img src="/img/Logo-lg.svg"/></span><span className="text">About Us</span></Logo></Link>
         </div>
         <div className="col-auto text-center" onClick={MenuOnClick}>
           <div className="header__burger"  id="js-burger">
