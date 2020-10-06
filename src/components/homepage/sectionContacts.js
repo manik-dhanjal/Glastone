@@ -9,14 +9,9 @@ const SectionContacts=()=>{
           <div className="col-lg-3">
             <div className="figure-contact">
               <div className="figure-contact__icon material-icons"><FontAwesomeIcon icon={faLocationArrow} /></div>
-              <div className="add-title">Registered Office:<br/><br/></div>
+              <div className="add-title">Registered Office:</div>
               <div className="figure-contact__item add-margin" > 47A Gautam Nagar, New Delhi - 110049</div>
-            </div>
-          </div>
-          <div className="col-lg-3">
-            <div className="figure-contact">
-              <div className="figure-contact__icon material-icons"><FontAwesomeIcon icon={faLocationArrow} /></div>
-              <div className="add-title">Correspondence Address<br/> & Manufacturing Facilities</div>
+              <div className="add-title">Works:</div>
                 <div className="figure-contact__item"> 1-7 & 1-13, Site-C, Surajpur, Industrial Area, Greater-Noida - 201306</div>
             </div>
           </div>

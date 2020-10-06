@@ -23,7 +23,7 @@ return(
           <div className="col-lg-4 text-left footer__column">
             <section className="widget widget_cassio_logo"><a className="logo" href="homepage-slider-4.html">
                 <div className="logo__text">
-                  <div className="dark-logo"><img src="/img/logo-lg.svg"/></div>
+                  <div className="dark-logo"><img src="/img/logo.svg"/></div>
                   <div className="about-text">About Us</div>
                 </div></a>
               {/* <p className=" text-white">Mosiacs By Glastone</p> */}

@@ -1,26 +1,14 @@
 import React from "react"
-import {Link} from "gatsby"
-import styled from "styled-components"
 
-const SFooter=styled.footer`
-& .logo-cont{
-  display:flex;
-  flex-direction:column;
-  & .about__text{
-    color:#333;
-  }
-}
-`
 const Footer =()=>{
     return(
-        <SFooter className="footer container-fluid">
+        <footer className="footer container-fluid">
         <div className="footer__area-primary">
           <div className="footer__row row">
             <div className="col-lg-4 text-left footer__column">
-              <section className="widget widget_cassio_logo"><Link className="logo-cont" to="/">
-                  <div className="logo"><img src="./img/Logo-dk.svg"/></div>
-                  <div className="about__text">About Us</div></Link>
-                {/* <p>Mosiac by Glastone</p> */}
+              <section className="widget widget_cassio_logo"><a className="logo" href="homepage-slider-4.html">
+                  <div className="logo__text"><span className="logo__text-title">Glastone</span></div></a>
+                <p>Mosiac by Glastone</p>
               </section>
             </div>
             <div className="col-lg-4 text-center footer__column">
@@ -59,12 +47,12 @@ const Footer =()=>{
                 </ul>
               </section>
             </div>
-            <div className="col-lg-6 order-lg-1 footer__column text-left">
-              <section className="widget widget_cassio_copyright"><small class="copyright">Glastone © 2020 </small></section>
-            </div>
+            {/* <div className="col-lg-6 order-lg-1 footer__column text-left">
+              <section className="widget widget_cassio_copyright"><small class="copyright">© 2019 Cassio – Creative Portfolio AJAX Template for Architects and Interior Designers. Crafted by <a href="https://artemsemkin.com/" target="_blank">Artem Semkin.</a></small></section>
+            </div> */}
           </div>
         </div>
-      </SFooter>
+      </footer>
     )
 }
 
