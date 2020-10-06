@@ -1,9 +1,8 @@
 import React, { useState ,useEffect} from "react"
+import {Link,StaticQuery} from "gatsby"
 import PortfolioGridWrapper from "../molecule/portfolio-Grid-wrapper"
-const handler =()=>{
-  console.log("jgh")
-}
-const SectionPortfolio = () => {
+
+const SectionPortfolio = ({project,categories,data}) => {
   var obj = [{
     category: "House",
     projects: [{
@@ -31,10 +30,18 @@ const SectionPortfolio = () => {
       img: "/img/assets/project2/img-2-7.jpg"
     }]
   }]
-  const [Data, setData] = useState(obj)
-  const [filterCat,setFilterCat]=useState("all")
-  const filterdProject = Data.filter(data=> data.category==filterCat||"all"==filterCat );
-  
+
+const [filterdProject,setFilteredPrject]=useState(project)
+const filterProject = (slug) =>{
+if(slug=="all")
+{
+  setFilteredPrject(project);
+}
+else{
+ setFilteredPrject( project.filter(data=>  data.categories[0].slug==slug))
+}
+}
+
   return (
     <section className="section section-portfolio bg-white section_mt-small section_pb-small" >
       <div className="section-portfolio__wrapper-tabs" >
@@ -42,13 +49,13 @@ const SectionPortfolio = () => {
           <div className="filter__inner">
            <div className="container-fluid">
               <div className="row justify-content-center">
-                <div class="col-xl-auto col-12 filter__item filter__item_active js-filter__item" onClick={()=>setFilterCat("all")} data-filter="*">
+                <div className="col-xl-auto col-12 filter__item filter__item_active js-filter__item" onClick={()=>filterProject("all")}>
                   <div>All</div>
                  </div>
-               {Data.map(data=>(
+               {categories.map(category=>(
 
-                 <div class="col-xl-auto col-12 filter__item filter__item_active js-filter__item" onClick={()=>setFilterCat(data.category)} data-filter="*">
-                  <div>{data.category}</div>
+                 <div class="col-xl-auto col-12 filter__item filter__item_active js-filter__item" onClick={()=>filterProject(category.slug)} >
+                   {category.name}
                  </div>
 
                  ))}    
@@ -58,6 +65,7 @@ const SectionPortfolio = () => {
          </div>
        </div>
      </div>
+     {console.log("vsdvsd",filterdProject)}
       <PortfolioGridWrapper projects={filterdProject} />
     </section>
   )

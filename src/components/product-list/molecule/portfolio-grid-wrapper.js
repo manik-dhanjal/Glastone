@@ -7,7 +7,7 @@ const portfolioGridWrapper = ({projects}) =>{
         <div className="container-fluid">
           <div className="grid grid_fluid-3 js-grid " style={{display:"flex",flexWrap:"wrap"}}>
            {  
-             projects.map(cat=> cat.projects.map(project=> <PortfolioGridCard title={project.title} link={project.link} img={project.img} category={cat.category}/>))
+             projects.map(project=> <PortfolioGridCard project={project}/>)
              
            }
           
