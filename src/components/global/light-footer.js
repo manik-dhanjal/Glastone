@@ -18,7 +18,7 @@ const Footer =()=>{
           <div className="footer__row row">
             <div className="col-lg-4 text-left footer__column">
               <section className="widget widget_cassio_logo"><Link className="logo-cont" to="/">
-                  <div className="logo"><img src="./img/Logo-dk.svg"/></div>
+                  <div className="logo"><img src="/img/Logo-dk.svg"/></div>
                   <div className="about__text">About Us</div></Link>
                 {/* <p>Mosiac by Glastone</p> */}
               </section>

@@ -34,11 +34,11 @@ useEffect(() => {
   });
 });
     return (
-    <SHeader className={`header header_fixed js-sticky-header ${IsScroll?" header_sticky bg-white":null}`} data-header-animation data-header-sticky-theme="bg-white">
+    <SHeader className={`header header_fixed js-sticky-header ${IsScroll?" header_sticky bg-white":null}`} >
     <div className="container-fluid header__controls">
       <div className="row justify-content-between align-items-center">
         <div className="col text-left header__col-left"><Link className="logo" href="/">
-            <div className="logo-cont" style={{transition:"1s ease"}} style={IsOpen?{"transform":" translateX(-300px)",visibility:'none',transition:"1s ease"}: {visibility:'visible',"transform":" translateX(0)",transition:"1s ease"}}><span className="logo"><img src="./img/logo-dk.svg"/></span><span className="about-text">About Us</span></div></Link>
+            <div className="logo-cont" style={{transition:"1s ease"}} style={IsOpen?{"transform":" translateX(-300px)",visibility:'none',transition:"1s ease"}: {visibility:'visible',"transform":" translateX(0)",transition:"1s ease"}}><span className="logo"><img src="/img/Logo-dk.svg"/></span><span className="about-text">About Us</span></div></Link>
         </div>
         <div className="col-auto text-center" onClick={()=>setIsOpen(!IsOpen)}>
           <div className="header__burger" id="js-burger">
