@@ -1,5 +1,5 @@
 import React, { useState ,useEffect} from "react"
-import PortfolioGridWrapper from "../molecule/portfolio-Grid-wrapper"
+import PortfolioGridWrapper from "../molecule/portfolio-grid-wrapper"
 const handler =()=>{
   console.log("jgh")
 }
