@@ -60,7 +60,7 @@ const Footer =()=>{
               </section>
             </div>
             <div className="col-lg-6 order-lg-1 footer__column text-left">
-              <section className="widget widget_cassio_copyright"><small class="copyright">Glastone © 2020 </small></section>
+              <section className="widget widget_cassio_copyright"><small className="copyright">Glastone © 2020 </small></section>
             </div>
           </div>
         </div>

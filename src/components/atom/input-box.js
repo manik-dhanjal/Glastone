@@ -39,8 +39,8 @@ const handleFocus=(e)=>{
                     <div className="col form__col">
                       <label className="input-float js-input-float">
                           <input className='input-float__input error' {...otherprops} required="required" onChange={handleChange} onFocus={handleFocus} onBlur={handleFocus} onInvalid={handleInvalid}/>
-                          <span class="input-float__label">{label}</span>
-                          <span class="form__error"></span>
+                          <span className="input-float__label">{label}</span>
+                          <span className="form__error"></span>
                           <span id={`${otherprops.name}-error`} className="error form__error" style={{display: "none"}}>{errorMsg}</span>
                       </label>
                     </div>

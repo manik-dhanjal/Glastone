@@ -284,9 +284,9 @@ a:focus {
     outline: none;
 }
 .button_accent {
-    background-color: var(--color-accent-primary-2);
+    background-color: white;
     border-color: var(--color-accent-primary-2);
-    color: var(--color-accent-primary-4);
+    color: #181818;
 }
 .button_accent .button__icon {
     background-color: var(--color-accent-primary-3);

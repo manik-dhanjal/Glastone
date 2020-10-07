@@ -1,9 +1,18 @@
 import React from "react";
-
-
+import styled from "styled-components"
+const SMastHead= styled.section`
+.banner{
+  margin-top:50px;
+  object-fit:cover;
+  object-position:center;
+  & img{
+  width:100%;
+  }
+}
+`
 const Masthead =()=>{
     return (
-       <section className="section section-masthead section_pt-large text-center" >
+       <SMastHead className="section section-masthead section_pt-large text-center" >
         <div className="section-masthead__inner container">
           <header className="row section-masthead__header justify-content-center">
             <div className="col-lg-10">
@@ -12,8 +21,12 @@ const Masthead =()=>{
             </div>
           </header>
         </div>
-      </section>
+        <div className="banner">
+            <img src="/img/assets/sectionBlog/img-1.jpg"/>
+        </div>
+      </SMastHead>
      
     )
 }
 export default Masthead;
+

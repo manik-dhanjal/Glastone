@@ -3,27 +3,21 @@ import "../dist/css/slider.css"
 import "../dist/css/vendor.css"
 import "../dist/css/main.css"
 import "../dist/css/about-custom.css"
-import Masthead from "../components/about/organism/masthead"
-import SectionImg1 from "../components/about/organism/section-img-1"
-import SectionContent1 from "../components/about/organism/section-content-1"
-import SectionTeam from "../components/about/organism/section-team"
-import SectionLogos from "../components/about/organism/aside-logos"
-import SectionHeader2 from "../components/about/organism/section-header-2"
-import SectionAwards from "../components/about/organism/SectionAwards"
-import SectionCall from "../components/about/organism/section-call"
+import SectionCall from "../components/organism/about/section-call"
 import Layout from "../layout/light-default"
-
+import OurBrand from "../components/organism/about/our-brand.organism"
+import AboutHead from "../components/organism/about/about-head.organism"
+import Product from "../components/organism/about/products.organism"
+import Team from "../components/organism/about/team"
 const About = () => {
     return (
         <Layout>
-            <Masthead />
-            <SectionImg1 />
-            <SectionContent1 />
-            <SectionLogos />
-            <SectionAwards />
-            <SectionHeader2 />
-            <SectionTeam />
-            <SectionCall />
+            <AboutHead/>
+            <OurBrand/>
+            <Product/>
+            <Team/>
+            <SectionCall/>
+
         </Layout>
     )
 }

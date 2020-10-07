@@ -6,7 +6,7 @@ const ContactPage =()=>{
     return(
         <LightLayout>
             <SectionHeader />
-             <Contact dark={false}/>
+            <Contact dark={false}/>
         </LightLayout>
     )
 }

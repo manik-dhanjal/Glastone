@@ -9,8 +9,8 @@ const LightLayout =(Props)=>{
         <div data-barba="wrapper">
             <Header/>
         <div className="page-wrapper" data-barba="container">
-         <main className="page-wrapper__content">
-          <div className="container-fluid container_xs-no-padding">
+         <main className="page-wrapper__content" style={{background:"#E5E5E5"}}>
+          <div className="container-fluid container_xs-no-padding" >
 
            {Props.children}
            

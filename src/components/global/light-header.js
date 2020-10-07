@@ -37,7 +37,7 @@ useEffect(() => {
     <SHeader className={`header header_fixed js-sticky-header ${IsScroll?" header_sticky bg-white":null}`} >
     <div className="container-fluid header__controls">
       <div className="row justify-content-between align-items-center">
-        <div className="col text-left header__col-left"><Link className="logo" href="/">
+        <div className="col text-left header__col-left"><Link className="logo" to="/">
             <div className="logo-cont" style={{transition:"1s ease"}} style={IsOpen?{"transform":" translateX(-300px)",visibility:'none',transition:"1s ease"}: {visibility:'visible',"transform":" translateX(0)",transition:"1s ease"}}><span className="logo"><img src="/img/Logo-dk.svg"/></span><span className="about-text">About Us</span></div></Link>
         </div>
         <div className="col-auto text-center" onClick={()=>setIsOpen(!IsOpen)}>
@@ -62,30 +62,10 @@ useEffect(() => {
       <div className="header__wrapper-menu">
         <ul className="menu-overlay js-menu-overlay">
           <li className="menu-item-has-children"><Link to="/" data-letter="H">
-              <div className="menu-overlay__item-wrapper js-text-to-fly split-text js-split-text" data-split-text-type="lines, words, chars">Homepages</div></Link>
+              <div className="menu-overlay__item-wrapper js-text-to-fly split-text js-split-text">Homepages</div></Link>
           </li>
           <li className="menu-item-has-children"><Link to="/product" data-letter="P">
-              <div className="menu-overlay__item-wrapper js-text-to-fly split-text js-split-text" data-split-text-type="lines, words, chars">Products</div></Link>
-            {/* <ul className="sub-menu">
-              <li><a href="project-1.html" data-letter="L" data-pjax-link="overlayMenu">
-                  <div className="menu-overlay__item-wrapper js-text-to-fly split-text js-split-text" data-split-text-type="lines, words, chars">Luxury Touch</div></a>
-              </li>
-              <li><a href="project-2.html" data-letter="P" data-pjax-link="overlayMenu">
-                  <div className="menu-overlay__item-wrapper js-text-to-fly split-text js-split-text" data-split-text-type="lines, words, chars">Platinum Perfection</div></a>
-              </li>
-              <li><a href="project-3.html" data-letter="R" data-pjax-link="overlayMenu">
-                  <div className="menu-overlay__item-wrapper js-text-to-fly split-text js-split-text" data-split-text-type="lines, words, chars">Royal King Suite</div></a>
-              </li>
-              <li><a href="project-4.html" data-letter="E" data-pjax-link="overlayMenu">
-                  <div className="menu-overlay__item-wrapper js-text-to-fly split-text js-split-text" data-split-text-type="lines, words, chars">Elegant Apartment</div></a>
-              </li>
-              <li><a href="project-5.html" data-letter="E" data-pjax-link="overlayMenu">
-                  <div className="menu-overlay__item-wrapper js-text-to-fly split-text js-split-text" data-split-text-type="lines, words, chars">European Style</div></a>
-              </li>
-              <li><a href="project-6.html" data-letter="L" data-pjax-link="overlayMenu">
-                  <div className="menu-overlay__item-wrapper js-text-to-fly split-text js-split-text" data-split-text-type="lines, words, chars">Loft Apartment</div></a>
-              </li>
-            </ul> */}
+              <div className="menu-overlay__item-wrapper js-text-to-fly split-text js-split-text" >Products</div></Link>
           </li>
           <li className="menu-item-has-children"><Link to="/project" data-letter="P">
               <div className="menu-overlay__item-wrapper js-text-to-fly split-text js-split-text" data-split-text-type="lines, words, chars">Projects</div></Link>
