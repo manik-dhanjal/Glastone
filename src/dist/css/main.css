@@ -3658,7 +3658,7 @@ div.wpcf7-acceptance-missing {
     width: 100%;
     max-width: 120px;
     height: 1px;
-    background-color: var(--color-accent-primary-1);
+    background-color: var(--color-accent-secondary-4);
     margin-top: calc(1 * (40 * 1px));
 }
 @media screen and (min-width: 320px) {
