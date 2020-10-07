@@ -13,7 +13,7 @@ const Intro = styled.section`
       width:100%;
     }
   }
-  &> .head-intro{
+ .head-intro{
     h1{
       margin:0px;
       font-weight:400;
