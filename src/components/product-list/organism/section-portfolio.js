@@ -2,34 +2,7 @@ import React, { useState ,useEffect} from "react"
 import {Link,StaticQuery} from "gatsby"
 import PortfolioGridWrapper from "../molecule/portfolio-grid-wrapper"
 
-const SectionPortfolio = ({project,categories,data}) => {
-  var obj = [{
-    category: "House",
-    projects: [{
-      title: "Luxary Touch",
-      link: "/project",
-      img: "/img/assets/project2/img-2-6.jpg"
-    },
-    {
-      title: "Luxary Touch",
-      link: "/project",
-      img: "/img/assets/project2/img-2-6.jpg"
-    }]
-  },
-  {
-    category: "House2",
-
-    projects: [{
-      title: "Luxary Touch",
-      link: "/project",
-      img: "/img/assets/project2/img-2-7.jpg"
-    },
-    {
-      title: "Luxary Touch",
-      link: "/project",
-      img: "/img/assets/project2/img-2-7.jpg"
-    }]
-  }]
+const SectionPortfolio = ({project,categories}) => {
 
 const [filterdProject,setFilteredPrject]=useState(project)
 const filterProject = (slug) =>{
@@ -65,7 +38,6 @@ else{
          </div>
        </div>
      </div>
-     {console.log("vsdvsd",filterdProject)}
       <PortfolioGridWrapper projects={filterdProject} />
     </section>
   )

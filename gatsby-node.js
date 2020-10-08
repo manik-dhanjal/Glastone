@@ -1,6 +1,6 @@
 const { match } = require("assert")
 const path = require("path")
-
+const products =require("./src/template/product/productData.js") 
 exports.createPages = async ({graphql,actions}) => {
     const {createPage}=actions
 
@@ -28,20 +28,29 @@ query MyQuery {
   
   
 `)
-console.log(result)
 if (result.errors) {
     throw new Error(result.errors)
 }
 
 const projects = result.data.allWordpressPost.nodes;
 const projectpage = path.resolve(`./src/template/project.js`)
+const productpage=path.resolve("./src/template/product/product.js")
 
 
-projects.forEach(node => {
-    // This part here defines, that our posts will use
-    // a `/:slug/` permalink.
-
-    
+products.data.forEach(product => { 
+  var slug= "/product/"+product.slug;
+  console.log("=================================================")
+  console.log(slug)
+  console.log("=================================================")
+  createPage({
+      path: slug,
+      component: productpage,
+      context: {
+          product:product
+      },
+  })
+})
+projects.forEach(node => { 
     var slug= node.categories[0].path.replace('/category','')+node.slug;
     console.log("=================================================")
     console.log(slug)

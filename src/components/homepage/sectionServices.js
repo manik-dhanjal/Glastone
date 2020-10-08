@@ -1,4 +1,5 @@
 import React from 'react'
+import {Link} from "gatsby"
 import { faAngleRight} from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import SplitText from 'react-pose-text';
@@ -35,9 +36,9 @@ const SectionServices=()=>{
                 {/* <div className="section-services__counter split-text js-split-text" data-split-text-type="lines, words, chars" data-split-text-set="chars"><Sidebar class="sidebar" initialPose="exit" pose="enter"> <SplitText charPoses={charPoses}>Quality</SplitText>  </Sidebar></div> */}
                 <h4 className="section-services__heading split-text js-split-text" data-split-text-type="lines, words, chars" data-split-text-set="chars"><Sidebar class="sidebar" initialPose="exit" pose="enter"> <SplitText charPoses={charPoses}>Glass Mosaics</SplitText>  </Sidebar></h4>
               </div>
-              <div className="section-services__wrapper-button"><a className="link-arrow section-services__link" href="#">
+              <div className="section-services__wrapper-button"><Link className="link-arrow section-services__link" to="/product/glass-mosaics">
                   <div className="link-arrow__label">Learn more</div>
-                  <div className="link-arrow__icon material-icons"><FontAwesomeIcon icon={faAngleRight} /></div></a></div>
+                  <div className="link-arrow__icon material-icons"><FontAwesomeIcon icon={faAngleRight} /></div></Link></div>
               <div className="section-services__border-line" />
             </div>
             <div className="col-lg-3 section-services__wrapper-item">
@@ -45,9 +46,9 @@ const SectionServices=()=>{
                 {/* <div className="section-services__counter split-text js-split-text" data-split-text-type="lines, words, chars" data-split-text-set="chars"><Sidebar class="sidebar" initialPose="exit" pose="enter"> <SplitText charPoses={charPoses}>Durability</SplitText>  </Sidebar></div> */}
                 <h4 className="section-services__heading split-text js-split-text" data-split-text-type="lines, words, chars" data-split-text-set="chars"><Sidebar class="sidebar" initialPose="exit" pose="enter"> <SplitText charPoses={charPoses}>Ceramic Mosaics</SplitText></Sidebar></h4>
               </div>
-              <div className="section-services__wrapper-button"><a className="link-arrow section-services__link" href="#">
+              <div className="section-services__wrapper-button"><Link className="link-arrow section-services__link" to="/product/ceramic-mosaics">
                   <div className="link-arrow__label">Learn more</div>
-                  <div className="link-arrow__icon material-icons"><FontAwesomeIcon icon={faAngleRight} /></div></a></div>
+                  <div className="link-arrow__icon material-icons"><FontAwesomeIcon icon={faAngleRight} /></div></Link></div>
               <div className="section-services__border-line" />
             </div>
             <div className="col-lg-3 section-services__wrapper-item">
@@ -55,9 +56,9 @@ const SectionServices=()=>{
                 {/* <div className="section-services__counter split-text js-split-text" data-split-text-type="lines, words, chars" data-split-text-set="chars"><Sidebar class="sidebar" initialPose="exit" pose="enter"> <SplitText charPoses={charPoses}>Punctuality</SplitText>  </Sidebar></div> */}
                 <h4 className="section-services__heading split-text js-split-text" data-split-text-type="lines, words, chars" data-split-text-set="chars"><Sidebar class="sidebar" initialPose="exit" pose="enter"> <SplitText charPoses={charPoses}>Stone Mosaics</SplitText>  </Sidebar></h4>
               </div>
-              <div className="section-services__wrapper-button"><a className="link-arrow section-services__link" href="#">
+              <div className="section-services__wrapper-button"><Link className="link-arrow section-services__link" to="/product/stone-mosaic">
                   <div className="link-arrow__label">Learn more</div>
-                  <div className="link-arrow__icon material-icons"><FontAwesomeIcon icon={faAngleRight} /></div></a></div>
+                  <div className="link-arrow__icon material-icons"><FontAwesomeIcon icon={faAngleRight} /></div></Link></div>
               <div className="section-services__border-line" />
             </div>
             
@@ -66,9 +67,9 @@ const SectionServices=()=>{
                 {/* <div className="section-services__counter split-text js-split-text" data-split-text-type="lines, words, chars" data-split-text-set="chars"><Sidebar class="sidebar" initialPose="exit" pose="enter"> <SplitText charPoses={charPoses}>Punctuality</SplitText>  </Sidebar></div> */}
                 <h4 className="section-services__heading split-text js-split-text" data-split-text-type="lines, words, chars" data-split-text-set="chars"><Sidebar class="sidebar" initialPose="exit" pose="enter"> <SplitText charPoses={charPoses}>Borders & Murals</SplitText>  </Sidebar></h4>
               </div>
-              <div className="section-services__wrapper-button"><a className="link-arrow section-services__link" href="#">
+              <div className="section-services__wrapper-button"><Link className="link-arrow section-services__link" to="/product/stone-mosaic">
                   <div className="link-arrow__label">Learn more</div>
-                  <div className="link-arrow__icon material-icons"><FontAwesomeIcon icon={faAngleRight} /></div></a></div>
+                  <div className="link-arrow__icon material-icons"><FontAwesomeIcon icon={faAngleRight} /></div></Link></div>
               <div className="section-services__border-line" />
             </div>
           </div>

@@ -10,6 +10,11 @@ const SFooter=styled.footer`
     color:#333;
   }
 }
+@media screen and (max-width:1024px){
+  & .logo-cont{
+    align-items:center;
+  }
+}
 `
 const Footer =()=>{
     return(

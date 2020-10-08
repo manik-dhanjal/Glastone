@@ -6,9 +6,10 @@ import styled from "styled-components"
 const Intro = styled.section`
 & .section-masthead__header>div{
   display:flex;
+  align-items:center;
   & >.logo{
-    width:20%;
-    margin-right:30px;
+    min-width:20%;
+    margin-right:20px;
     &>img{
       width:100%;
     }
@@ -18,6 +19,8 @@ const Intro = styled.section`
       margin:0px;
       font-weight:400;
       letter-spacing:0.12em;
+      font-size:clamp(32px,6vw,72px);
+      white-space:nowrap;
     }
     h4{
       margin:0px;
@@ -25,8 +28,15 @@ const Intro = styled.section`
       letter-spacing:1.6em;
       color:white;
       line-height:1.1em;
+      font-size:clamp(16px,3vw,36px);
+      white-space:nowrap;
     }
   }
+}
+@media screen and(max-width:720px){
+  & .section-masthead__header .logo{
+      min-width:50px;
+     
 }
 `
 const SectionIntro=()=>{
@@ -55,12 +65,13 @@ const SectionIntro=()=>{
               <h1 className="section-masthead__heading section-intro__heading split-text js-split-text text-xl" data-split-text-type="lines, words, chars" data-split-text-set="chars"> <Sidebar className="sidebar" initialPose="exit" pose="enter"> <SplitText charPoses={charPoses}>GLASTONE</SplitText>  </Sidebar></h1> */}
               <div className="logo"><img src="/img/Logo-lg.svg"/></div>
               <div className="head-intro">
-                <h1>GLASTONE</h1>
-                <h4>MOSAIC</h4>
+             
+                  <h1><Sidebar class="sidebar" initialPose="exit" pose="enter"> <SplitText charPoses={charPoses}>GLASTONE</SplitText></Sidebar></h1>
+                  <h4><Sidebar class="sidebar" initialPose="exit" pose="enter"> <SplitText charPoses={charPoses}>MOSAIC</SplitText></Sidebar></h4>
+               
               </div>
             </div>
-            <div className="col-lg-6">
-            </div>
+           
           </header>
         </div>
         <div className="section-masthead__background section-masthead__background_fullscreen" data-art-parallax="background" data-art-parallax-factor="0.1">

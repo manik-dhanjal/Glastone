@@ -1,14 +1,25 @@
 import React from "react"
-import '../../../dist/css/main.css';
+import styled from  "styled-components"
+
+
+const STeamCard = styled.div`
+.figure-member__heading{
+  color: #282685;
+}
+.figure-member__position{
+  color:#181818;
+}
+
+`
+
 const TeamCard=(props)=>{
-    console.log(props)
 return(
     
-    <div className="grid__item grid__item_desktop-4 grid__item_tablet-6 grid__item_mobile-12 grid__item_fluid-3 js-grid__item">
+    <STeamCard className="grid__item grid__item_desktop-4 grid__item_tablet-6 grid__item_mobile-12 grid__item_fluid-3 js-grid__item">
     <div className="figure-member figure-member_has-social">
       <div className="figure-member__wrapper-img">
         <div className="figure-member__wrapper-img-inner">
-          <div className="lazy grayscale"><img src={`/img/assets/avatars/${props.children.img}`}  width="300" height="450" alt/></div>
+          <div className="lazy grayscale"><img src={`/img/assets/avatars/${props.children.img}`}  width="300" height="450" alt={props.children.name}/></div>
           <div className="figure-member__curtain bg-accent-secondary-4"></div>
         </div>
         <div className="figure-member__social">
@@ -26,7 +37,7 @@ return(
         <div className="figure-member__position">{props.children.postion}</div>
       </div>
     </div>
-  </div>
+  </STeamCard>
 )
 }
 

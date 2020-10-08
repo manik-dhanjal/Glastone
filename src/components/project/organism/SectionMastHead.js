@@ -3,12 +3,14 @@ import styled from "styled-components"
 import parse from "html-react-parser"
 
 const SMasthead= styled.section`
-
+.section-masthead__text{
+    color:#181818;
+}
 `
 const SectionMastHead=({category,title,excerpt})=>{
   
     return(
-    <SMasthead className="section section-masthead section_pt-large section_pb-small text-left bg-light" >
+    <SMasthead className="section section-masthead section_pt-large section_pb-small text-left " >
         <div className="section-masthead__inner container-fluid">
         <header className="row section-masthead__header justify-content-start">
             <div className="col mw-960">

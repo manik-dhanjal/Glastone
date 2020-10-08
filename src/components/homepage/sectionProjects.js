@@ -1,9 +1,10 @@
 import React,{ useState } from "react"
-
+import { useStaticQuery, graphql } from "gatsby"
 import Slider from "react-slick";
-
+import PortfolioGridCard from "../product-list/molecule/portfolio-grid-card"
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import Card from "./card"
 function SampleNextArrow(props) {
   const { className, style, onClick } = props;
   return (
@@ -67,6 +68,24 @@ export default function SectionProjects() {
     ]
   
   };
+  const data = useStaticQuery(graphql`
+  query myQueryAndMyQueryAndMyQueryAndMyQuery {
+    allWordpressPost {
+      nodes {
+        title
+        slug
+        featured_media {
+          source_url
+        }
+        categories {
+          slug
+          name
+        }
+      }
+    }
+  }
+`).allWordpressPost.nodes
+console.log(data)
   return (
    
        <div>
@@ -86,7 +105,7 @@ export default function SectionProjects() {
       </section>
 
       <Slider {...settings}>
-      
+{/*       
       <div className="parent">
   <div className="img">
     <img src="https://images.pexels.com/photos/1034662/pexels-photo-1034662.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" className="img" alt="" />
@@ -153,9 +172,8 @@ export default function SectionProjects() {
   <div className="curtain">
   </div>
 </div>
- 
-
-      
+  */}
+  {data.map((project,i)=><Card data={project} key={i}/>)}
       </Slider>
  
     </div> 
