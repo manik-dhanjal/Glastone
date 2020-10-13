@@ -17,6 +17,28 @@ display:inline-block;
 }
 
 `
+const SHeader =styled.header`
+.product-sub-menu{
+  transform:${({product})=>product?"translateX(0px)":"translateX(60px)"};
+  opacity:${({product})=>product?"1!important":"0"};
+  z-index:${({product})=>product?"100 !important":"-1"};
+  visibility:${({product})=>product?"visible!important":"hidden"};
+  transition:0.8s ease;
+}
+.menu-overlay>li>a{
+  transform:${({product})=>product?"translateX(-60px)":"translateX(0px)"};
+  opacity:${({product})=>product?"0!important":"1"};
+  visibility:${({product})=>product?"hidden!important":"visible"};
+  transition:0.4s ease;
+}
+.header__overlay-menu-back{
+  transform:${({product})=>product?"translateX(0px)":"translateX(-15px)"};
+  opacity:${({product})=>product?"1!important":"0"};
+  z-index:${({product})=>product?"100 !important":"-1"};
+  visibility:${({product})=>product?"visible!important":"hidden"};
+  transition:0.4s ease;
+}
+`
 const Header=()=>{
   
   const [IsOpen, setIsOpen] = useState(false)
@@ -24,6 +46,7 @@ const Header=()=>{
   const [product,setProduct]=useState(false)
 const MenuOnClick=()=>{
   setIsOpen(!IsOpen)
+  setProduct(false);
 }
 const ProductOnClick=()=>{
   setProduct(!product);
@@ -39,7 +62,7 @@ const ProductOnClick=()=>{
   });
 
     return(
-        <header className={`header header_fixed js-sticky-header header_color-white ${IsScroll?" header_sticky bg-dark-2":null}`} data-header-animation data-header-sticky-theme="bg-dark-2">
+        <SHeader product={product}className={`header header_fixed js-sticky-header header_color-white ${IsScroll?" header_sticky bg-dark-2":null}`} data-header-animation data-header-sticky-theme="bg-dark-2">
     <div className="container-fluid header__controls">
       <div className="row justify-content-between align-items-center">
         <div className="col text-left header__col-left"><Link className="logo" to="/">
@@ -60,25 +83,25 @@ const ProductOnClick=()=>{
           </ul>
         </div>
       </div>
-      <div className="header__overlay-menu-back material-icons" id="js-submenu-back"  style={product?{opacity:"1",zIndex:"100",visibility:"visible"}:null} onClick={ProductOnClick}><FontAwesomeIcon icon={faArrowLeft}/></div>
+      <div className="header__overlay-menu-back material-icons" id="js-submenu-back"   onClick={ProductOnClick}><FontAwesomeIcon icon={faArrowLeft}/></div>
       {/* - back button */}
     </div>
     <div className={`header__wrapper-overlay-menu container-fluid bg-dark-2 color-white ${IsOpen?" opened":null} `}style={IsOpen?{ opacity: '1', visibility: 'visible', zIndex: '500',transform:"translateY(0vh)"}: {opacity: '1',transform:"translateY(-100vh)"}}>
       <div className="header__wrapper-menu">
         <ul className="menu-overlay js-menu-overlay" style={product?{visibility:"hidden"}:null}>
           <li className="menu-item-has-children"><Link to="/" data-letter="H">
-              <div className="menu-overlay__item-wrapper js-text-to-fly split-text js-split-text" data-split-text-type="lines, words, chars">Homepages</div></Link>
+              <div className="menu-overlay__item-wrapper js-text-to-fly split-text js-split-text" data-split-text-type="lines, words, chars">Home</div></Link>
           </li>
-          <li className="menu-item-has-children"><Link to="#" data-letter="P" onClick={ProductOnClick}>
-              <div className="menu-overlay__item-wrapper js-text-to-fly split-text js-split-text" >Products</div></Link>
-            <ul className="sub-menu" style={product?{opacity:"1",zIndex:"100",visibility:"visible"}:null}>
-              <li><Link to="/">
+          <li className="menu-item-has-children"><a href="#" data-letter="P" onClick={ProductOnClick}>
+              <div className="menu-overlay__item-wrapper js-text-to-fly split-text js-split-text" >Products</div></a>
+            <ul className="product-sub-menu sub-menu" >
+              <li><Link to="/product/glass-mosaics">
                   <div className="menu-overlay__item-wrapper js-text-to-fly split-text js-split-text" >Glass Mosaics</div></Link>
               </li>
-              <li><Link to="/">
+              <li><Link to="/product/ceramic-mosaics">
                   <div className="menu-overlay__item-wrapper js-text-to-fly split-text js-split-text" >Ceramic Mosaics</div></Link>
               </li>
-              <li><Link to="/" >
+              <li><Link to="/product/stone-mosaic" >
                   <div className="menu-overlay__item-wrapper js-text-to-fly split-text js-split-text" >Stone Mosiacs</div></Link>
               </li>
               <li><Link to="/" >
@@ -196,7 +219,7 @@ const ProductOnClick=()=>{
  
       <div className="header__curtain bg-ornament" />
     </div>
-  </header>
+  </SHeader>
   
     )
 }

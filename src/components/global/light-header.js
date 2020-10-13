@@ -1,7 +1,8 @@
 import { Link } from "gatsby";
 import React,{useState,useEffect}  from "react";
 import styled from "styled-components";
-
+import { faArrowLeft} from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 const SHeader = styled.div`
 & .logo-cont{
 display:flex;
@@ -18,12 +19,39 @@ align-items:center;
   }
 }
 }
+.product-sub-menu{
+  transform:${({product})=>product?"translateX(0px)":"translateX(60px)"};
+  opacity:${({product})=>product?"1!important":"0"};
+  z-index:${({product})=>product?"100 !important":"-1"};
+  visibility:${({product})=>product?"visible!important":"hidden"};
+  transition:0.8s ease;
+}
+.menu-overlay>li>a{
+  transform:${({product})=>product?"translateX(-60px)":"translateX(0px)"};
+  opacity:${({product})=>product?"0!important":"1"};
+  visibility:${({product})=>product?"hidden!important":"visible"};
+  transition:0.4s ease;
+}
+.header__overlay-menu-back{
+  transform:${({product})=>product?"translateX(0px)":"translateX(-15px)"};
+  opacity:${({product})=>product?"1!important":"0"};
+  z-index:${({product})=>product?"100 !important":"-1"};
+  visibility:${({product})=>product?"visible!important":"hidden"};
+  transition:0.4s ease;
+}
 `
 
 const Header =()=>{
     const [IsOpen, setIsOpen] = useState(false)
-const [IsScroll, setIsScroll] = useState(false)
-
+    const [IsScroll, setIsScroll] = useState(false)
+    const [product,setProduct]=useState(false)
+const MenuOnClick=()=>{
+  setIsOpen(!IsOpen)
+  setProduct(false);
+}
+const ProductOnClick=()=>{
+  setProduct(!product);
+}
 useEffect(() => {
   window.addEventListener('scroll',(e)=>{
     if(window.pageYOffset>10)
@@ -34,13 +62,13 @@ useEffect(() => {
   });
 });
     return (
-    <SHeader className={`header header_fixed js-sticky-header ${IsScroll?" header_sticky bg-white":null}`} >
+    <SHeader product={product}className={`header header_fixed js-sticky-header ${IsScroll?" header_sticky bg-white":null}`} >
     <div className="container-fluid header__controls">
       <div className="row justify-content-between align-items-center">
         <div className="col text-left header__col-left"><Link className="logo" to="/">
             <div className="logo-cont" style={{transition:"1s ease"}} style={IsOpen?{"transform":" translateX(-300px)",visibility:'none',transition:"1s ease"}: {visibility:'visible',"transform":" translateX(0)",transition:"1s ease"}}><span className="logo"><img src="/img/Logo-dk.svg"/></span><span className="about-text">About Us</span></div></Link>
         </div>
-        <div className="col-auto text-center" onClick={()=>setIsOpen(!IsOpen)}>
+        <div className="col-auto text-center" onClick={MenuOnClick}>
           <div className="header__burger" id="js-burger">
             <div className="header__burger-line" style={IsOpen?{"transform":"rotate(-45deg) translateY(6px)"}: {visibility:'none'}} ></div>
             <div className="header__burger-line" style={IsOpen?{"transform":"rotate(45deg) translateY(-6px)"}: {visibility:'none'}}></div>
@@ -55,17 +83,31 @@ useEffect(() => {
           </ul>
         </div>
       </div>
-      <div className="header__overlay-menu-back material-icons" id="js-submenu-back">arrow_back</div>
+      <div className="header__overlay-menu-back material-icons" id="js-submenu-back" onClick={ProductOnClick}><FontAwesomeIcon icon={faArrowLeft}/></div>
     
     </div>
     <div className={`header__wrapper-overlay-menu container-fluid bg-white  ${IsOpen?" opened":null} `} style={IsOpen?{ opacity: '1', visibility: 'visible', zIndex: '500',transform:"translateY(0vh)"}: {opacity: '1',transform:"translateY(-100vh)"}}>
       <div className="header__wrapper-menu">
         <ul className="menu-overlay js-menu-overlay">
           <li className="menu-item-has-children"><Link to="/" data-letter="H">
-              <div className="menu-overlay__item-wrapper js-text-to-fly split-text js-split-text">Homepages</div></Link>
+              <div className="menu-overlay__item-wrapper js-text-to-fly split-text js-split-text">Home</div></Link>
           </li>
-          <li className="menu-item-has-children"><Link to="/product" data-letter="P">
-              <div className="menu-overlay__item-wrapper js-text-to-fly split-text js-split-text" >Products</div></Link>
+          <li className="menu-item-has-children"><a href="#"data-letter="P" onClick={ProductOnClick}>
+              <div className="menu-overlay__item-wrapper js-text-to-fly split-text js-split-text" >Products</div></a>
+            <ul className="product-sub-menu sub-menu" >
+              <li><Link to="/product/glass-mosaics">
+                  <div className="menu-overlay__item-wrapper js-text-to-fly split-text js-split-text" >Glass Mosaics</div></Link>
+              </li>
+              <li><Link to="/product/ceramic-mosaics">
+                  <div className="menu-overlay__item-wrapper js-text-to-fly split-text js-split-text" >Ceramic Mosaics</div></Link>
+              </li>
+              <li><Link to="/product/stone-mosaic" >
+                  <div className="menu-overlay__item-wrapper js-text-to-fly split-text js-split-text" >Stone Mosiacs</div></Link>
+              </li>
+              <li><Link to="/" >
+                  <div className="menu-overlay__item-wrapper js-text-to-fly split-text js-split-text" >Borders & Murals</div></Link>
+              </li>
+            </ul>
           </li>
           <li className="menu-item-has-children"><Link to="/project" data-letter="P">
               <div className="menu-overlay__item-wrapper js-text-to-fly split-text js-split-text" data-split-text-type="lines, words, chars">Projects</div></Link>

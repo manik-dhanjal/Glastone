@@ -6,6 +6,9 @@ padding-bottom:100px;
 padding-top:50px;
 max-width:960px;
 margin:10px auto;
+@media screen and (max-width:1024px){
+margin:10px 30px;
+}
 `
 
 const Content = ({content})=>{
