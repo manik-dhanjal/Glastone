@@ -37,7 +37,7 @@ const MenuOnClick=()=>{
         <header className={`header header_fixed js-sticky-header header_color-white ${IsScroll?" header_sticky bg-dark-2":null}`} data-header-animation data-header-sticky-theme="bg-dark-2">
     <div className="container-fluid header__controls">
       <div className="row justify-content-between align-items-center">
-        <div className="col text-left header__col-left"><Link className="logo" href="/">
+        <div className="col text-left header__col-left"><Link className="logo" to="/">
             <Logo className="animate" IsOpen={IsOpen}><span className="logo-img"><img src="/img/Logo-lg.svg"/></span><span className="text">About Us</span></Logo></Link>
         </div>
         <div className="col-auto text-center" onClick={MenuOnClick}>

@@ -22,6 +22,7 @@
 }
  .project-head{
     font-size: 35px;
+    margin-bottom: 70px!important;
 }
 .header__wrapper-overlay-menu ,.animate{
     transition: all 1s ease-in-out;
@@ -82,14 +83,11 @@
     .section-about__decor{
         top:-70px;
     }
-    .section-about__wrapper-content{
+    /* .section-about__wrapper-content{
         margin-top: 70px;
-    }
+    } */
     .form__heading{
         font-size:30px;
-    }
-    .counter__number{
-        font-size:60px !important;
     }
   }
   /* @media screen and (max-width:768px)

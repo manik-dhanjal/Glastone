@@ -16,8 +16,8 @@ const SectionClient=()=>{
         </div>
         <div className="brand-logo-container container">
           {
-          brandImage.map(img=>
-            <div className="brand-logo">
+          brandImage.map((img,i)=>
+            <div className="brand-logo" key={i}>
             <img src={`/img/assets/client-logo/${img}`} alt={img}/>
             </div>
             )   

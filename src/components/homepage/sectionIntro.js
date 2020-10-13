@@ -4,9 +4,11 @@ import SplitText from 'react-pose-text';
 import styled from "styled-components"
 
 const Intro = styled.section`
+height:95vh;
 & .section-masthead__header>div{
   display:flex;
   align-items:center;
+
   & >.logo{
     min-width:20%;
     margin-right:20px;
@@ -66,8 +68,8 @@ const SectionIntro=()=>{
               <div className="logo"><img src="/img/Logo-lg.svg"/></div>
               <div className="head-intro">
              
-                  <h1><Sidebar class="sidebar" initialPose="exit" pose="enter"> <SplitText charPoses={charPoses}>GLASTONE</SplitText></Sidebar></h1>
-                  <h4><Sidebar class="sidebar" initialPose="exit" pose="enter"> <SplitText charPoses={charPoses}>MOSAIC</SplitText></Sidebar></h4>
+                  <h1><Sidebar className="sidebar" initialPose="exit" pose="enter"> <SplitText charPoses={charPoses}>GLASTONE</SplitText></Sidebar></h1>
+                  <h4><Sidebar className="sidebar" initialPose="exit" pose="enter"> <SplitText charPoses={charPoses}>MOSAIC</SplitText></Sidebar></h4>
                
               </div>
             </div>

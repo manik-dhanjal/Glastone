@@ -4566,7 +4566,7 @@ div.wpcf7-acceptance-missing {
 .section-about__decor {
     position: absolute;
     top: -60px;
-    right: 0px;
+    right: 15px;
     z-index: -1;
 }
 .section-about__wrapper-counter {
@@ -5566,6 +5566,19 @@ div.wpcf7-acceptance-missing {
     height: 1px;
     display: none;
 }
+@media screen and (max-width: 1200px) {
+    .section-services__wrapper-item:nth-of-type(1) .section-services__border-line,
+    .section-services__wrapper-item:nth-of-type(2) .section-services__border-line {
+        display: block;
+        position: absolute;
+        bottom: 0;
+        left: 20px;
+        right: 20px;
+        background-color: rgba(136, 136, 136, 0.3);
+        width: auto;
+        height: 1px;
+    }
+}
 @media screen and (max-width: 991px) {
     .section-services__wrapper-item:not(:last-child) .section-services__border-line {
         display: block;
@@ -5577,11 +5590,13 @@ div.wpcf7-acceptance-missing {
         width: auto;
         height: 1px;
     }
+   
     .section-services__heading {
         margin-top: 0.75em;
         margin-bottom: 0.75em;
     }
 }
+
 @media screen and (max-width: 1140px) {
     .section-services__bg {
         width: 100%;
