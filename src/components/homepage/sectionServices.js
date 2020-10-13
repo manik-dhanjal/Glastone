@@ -7,13 +7,19 @@ import posed from 'react-pose';
 import styled from "styled-components"
 const SServices= styled.section`
 position:relative;
-top:-110px;
+top:-95px;
 left:0;
 & .section-services__link{
   color:white!important;
 }
 h4.section-services__heading {
+  margin-top:10px;
 margin-bottom:5px;
+}
+@media screen and (max-width:1200px){
+  h4.section-services__heading {
+    margin-top:0px;
+   }
 }
 `
 const SectionServices=()=>{

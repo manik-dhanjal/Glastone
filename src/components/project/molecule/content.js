@@ -4,6 +4,8 @@ import parse from "html-react-parser"
 const SContent=styled.section`
 padding-bottom:100px;
 padding-top:50px;
+max-width:960px;
+margin:10px auto;
 `
 
 const Content = ({content})=>{

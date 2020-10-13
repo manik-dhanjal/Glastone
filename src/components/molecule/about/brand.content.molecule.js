@@ -7,7 +7,7 @@ display:flex;
 justify-content:center;
 flex-wrap:no-wrap;
 &>div{
-    width:400px;
+    width:470px;
     margin:50px 40px;
 }
 @media screen and (max-width:720px){

@@ -1,7 +1,8 @@
 import React,{useState,useEffect} from 'react'
 import {Link} from "gatsby"
 import styled from "styled-components";
-
+import { faArrowLeft} from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 const Logo = styled.div`
 transform:${props=>props.IsOpen?"translateX(-300px)":"translateX(0)"};
 visibility:${props=>props.IsOpen?"none":'visible'};
@@ -14,15 +15,19 @@ display:inline-block;
   width:100%;
 }
 }
+
 `
 const Header=()=>{
   
   const [IsOpen, setIsOpen] = useState(false)
   const [IsScroll, setIsScroll] = useState(false)
+  const [product,setProduct]=useState(false)
 const MenuOnClick=()=>{
   setIsOpen(!IsOpen)
 }
-
+const ProductOnClick=()=>{
+  setProduct(!product);
+}
   useEffect(() => {
     window.addEventListener('scroll',(e)=>{
       if(window.pageYOffset>10)
@@ -55,37 +60,31 @@ const MenuOnClick=()=>{
           </ul>
         </div>
       </div>
-      <div className="header__overlay-menu-back material-icons" id="js-submenu-back">arrow_back</div>
+      <div className="header__overlay-menu-back material-icons" id="js-submenu-back"  style={product?{opacity:"1",zIndex:"100",visibility:"visible"}:null} onClick={ProductOnClick}><FontAwesomeIcon icon={faArrowLeft}/></div>
       {/* - back button */}
     </div>
     <div className={`header__wrapper-overlay-menu container-fluid bg-dark-2 color-white ${IsOpen?" opened":null} `}style={IsOpen?{ opacity: '1', visibility: 'visible', zIndex: '500',transform:"translateY(0vh)"}: {opacity: '1',transform:"translateY(-100vh)"}}>
       <div className="header__wrapper-menu">
-        <ul className="menu-overlay js-menu-overlay">
+        <ul className="menu-overlay js-menu-overlay" style={product?{visibility:"hidden"}:null}>
           <li className="menu-item-has-children"><Link to="/" data-letter="H">
               <div className="menu-overlay__item-wrapper js-text-to-fly split-text js-split-text" data-split-text-type="lines, words, chars">Homepages</div></Link>
           </li>
-          <li className="menu-item-has-children"><Link to="/products" data-letter="P">
-              <div className="menu-overlay__item-wrapper js-text-to-fly split-text js-split-text" data-split-text-type="lines, words, chars">Products</div></Link>
-            {/* <ul className="sub-menu">
-              <li><a href="project-1.html" data-letter="L" data-pjax-link="overlayMenu">
-                  <div className="menu-overlay__item-wrapper js-text-to-fly split-text js-split-text" data-split-text-type="lines, words, chars">Luxury Touch</div></a>
+          <li className="menu-item-has-children"><Link to="#" data-letter="P" onClick={ProductOnClick}>
+              <div className="menu-overlay__item-wrapper js-text-to-fly split-text js-split-text" >Products</div></Link>
+            <ul className="sub-menu" style={product?{opacity:"1",zIndex:"100",visibility:"visible"}:null}>
+              <li><Link to="/">
+                  <div className="menu-overlay__item-wrapper js-text-to-fly split-text js-split-text" >Glass Mosaics</div></Link>
               </li>
-              <li><a href="project-2.html" data-letter="P" data-pjax-link="overlayMenu">
-                  <div className="menu-overlay__item-wrapper js-text-to-fly split-text js-split-text" data-split-text-type="lines, words, chars">Platinum Perfection</div></a>
+              <li><Link to="/">
+                  <div className="menu-overlay__item-wrapper js-text-to-fly split-text js-split-text" >Ceramic Mosaics</div></Link>
               </li>
-              <li><a href="project-3.html" data-letter="R" data-pjax-link="overlayMenu">
-                  <div className="menu-overlay__item-wrapper js-text-to-fly split-text js-split-text" data-split-text-type="lines, words, chars">Royal King Suite</div></a>
+              <li><Link to="/" >
+                  <div className="menu-overlay__item-wrapper js-text-to-fly split-text js-split-text" >Stone Mosiacs</div></Link>
               </li>
-              <li><a href="project-4.html" data-letter="E" data-pjax-link="overlayMenu">
-                  <div className="menu-overlay__item-wrapper js-text-to-fly split-text js-split-text" data-split-text-type="lines, words, chars">Elegant Apartment</div></a>
+              <li><Link to="/" >
+                  <div className="menu-overlay__item-wrapper js-text-to-fly split-text js-split-text" >Borders & Murals</div></Link>
               </li>
-              <li><a href="project-5.html" data-letter="E" data-pjax-link="overlayMenu">
-                  <div className="menu-overlay__item-wrapper js-text-to-fly split-text js-split-text" data-split-text-type="lines, words, chars">European Style</div></a>
-              </li>
-              <li><a href="project-6.html" data-letter="L" data-pjax-link="overlayMenu">
-                  <div className="menu-overlay__item-wrapper js-text-to-fly split-text js-split-text" data-split-text-type="lines, words, chars">Loft Apartment</div></a>
-              </li>
-            </ul> */}
+            </ul>
           </li>
           <li className="menu-item-has-children"><Link to="/project" data-letter="P">
               <div className="menu-overlay__item-wrapper js-text-to-fly split-text js-split-text" data-split-text-type="lines, words, chars">Projects</div></Link>

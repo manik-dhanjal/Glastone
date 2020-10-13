@@ -3,33 +3,31 @@ import { useStaticQuery, graphql } from "gatsby"
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { faAngleRight} from '@fortawesome/free-solid-svg-icons'
+import { faAngleLeft} from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Card from "./card"
 function SampleNextArrow(props) {
-  const { className, style, onClick } = props;
+  const {  style, onClick,className } = props;
   return (
-    <div
-      className={className}
-      style={{ ...style, display: "block",left:"150px",top:"110%",zIndex:"60"}}
-      onClick={onClick}
-    />
+
+    <span className="right-arrow"><FontAwesomeIcon icon={faAngleRight} style={{ ...style}} 
+    onClick={onClick} /></span>
   );
 }
 
 function SamplePrevArrow(props) {
-  const { className, style, onClick } = props;
+  const {style, onClick } = props;
   return (
-    <div
-      className={className}
-      style={{ ...style, display: "block", left:"80px",top:"110%",zIndex:"60"}}
-      onClick={onClick}
-    />
+
+  <span className="left-arrow">  <FontAwesomeIcon icon={faAngleLeft}  style={{ ...style}}  onClick={onClick}/> <span className="slash">/</span></span>
   );
 }
 export default function SectionProjects() {
  
   var settings = {
     dots: false,
-    infinite: true,
+    infinite: false,
     speed: 500,
     slidesToShow: 4,
     slidesToScroll: 4,
@@ -45,8 +43,7 @@ export default function SectionProjects() {
         settings: {
           slidesToShow: 2,
           slidesToScroll: 2,
-          infinite: true,
-          dots: true
+
         }
       },
       {
@@ -87,7 +84,7 @@ export default function SectionProjects() {
 console.log(data)
   return (
    
-          <section className="section section-content section_pb-xsmall bg-dark  "style={{visibility: "inherit",opacity: "1"}} data-os-animation="data-os-animation">
+      <section className="section section-content section_pb-xsmall bg-dark  "style={{visibility: "inherit",opacity: "1"}} data-os-animation="data-os-animation">
         <div className="container">
           <div className="row justify-content-center text-center">
             <div className="col-lg-8 section-content__header">
@@ -98,7 +95,7 @@ console.log(data)
             </div>
           </div>
         </div>
-        <Slider {...settings}>
+          <Slider {...settings}>
             {data.map((project,i)=><Card data={project} key={i}/>)}
          </Slider>
       </section>

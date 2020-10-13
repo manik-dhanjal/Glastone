@@ -5150,10 +5150,10 @@ div.wpcf7-acceptance-missing {
     font-size: 32px !important;
 }
 .section-nav-projects__arrow_prev {
-    left: 120px;
+    left: 50px;
 }
 .section-nav-projects__arrow_next {
-    right: 120px;
+    right: 50px;
 }
 .section-nav-projects__heading {
     font-family: var(--font-secondary);
@@ -5174,18 +5174,18 @@ div.wpcf7-acceptance-missing {
 }
 .section-nav-projects__wrapper-heading_prev {
     padding-right: 20px;
-    padding-left: 120px;
+    padding-left: 100px;
 }
 .section-nav-projects__wrapper-heading_next {
     padding-left: 20px;
-    padding-right: 120px;
+    padding-right: 100px;
 }
 @media screen and (max-width: 1400px) {
     .section-nav-projects__arrow_prev {
-        left: 70px;
+        left: 20px;
     }
     .section-nav-projects__arrow_next {
-        right: 70px;
+        right: 20px;
     }
     .section-nav-projects__wrapper-heading_prev {
         padding-left: 80px;
@@ -5196,16 +5196,16 @@ div.wpcf7-acceptance-missing {
 }
 @media screen and (max-width: 1280px) {
     .section-nav-projects__arrow_prev {
-        left: 40px;
+        left: 20px;
     }
     .section-nav-projects__arrow_next {
-        right: 40px;
+        right: 20px;
     }
     .section-nav-projects__wrapper-heading_prev {
-        padding-left: 50px;
+        padding-left: 60px;
     }
     .section-nav-projects__wrapper-heading_next {
-        padding-right: 50px;
+        padding-right: 60px;
     }
 }
 @media screen and (max-width: 991px) {
@@ -5294,6 +5294,7 @@ div.wpcf7-acceptance-missing {
 }
 .section-nav-projects.bg-accent-primary-2 .section-nav-projects__inner {
     color: var(--color-accent-primary-3);
+    transition:0.5s ease;
 }
 .section-nav-projects.bg-accent-primary-2 .section-nav-projects__inner:hover {
     background-color: #f7f5f0;
@@ -6393,7 +6394,7 @@ svg.vector-letters {
 }
 .social__item a {
     color: #888;
-    font-size: 13px;
+    font-size: 22px;
     padding: 8px;
 }
 .social__item a:hover {
@@ -7011,6 +7012,9 @@ cite:before {
 }
 .mw-960 {
     max-width: 960px;
+}
+.mw-720 {
+    max-width: 720px;
 }
 .widget p:last-of-type {
     margin-bottom: 0;

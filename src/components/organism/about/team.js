@@ -38,6 +38,10 @@ padding:100px 30px;
 .team-container{
     margin-top:50px;
 }
+.team-content{
+    max-width:1020px;
+    margin:10px auto;
+}
 `
 const Team=()=>{
     return(
