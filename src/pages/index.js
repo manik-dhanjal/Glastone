@@ -7,7 +7,7 @@ import SectionIntro from "../components/homepage/sectionIntro"
 import SectionServices from '../components/homepage/sectionServices'
 import SectionAbout from '../components/homepage/sectionAbout'
 import Contacts from "../components/organism/contact/contact.organism"
-import SectionMap from "../components/homepage/SectionMap"
+import SectionMap from "../components/homepage/sectionMap"
 import "../dist/css/home-custom.css"
 import { ParallaxProvider } from 'react-scroll-parallax';
 const Home=()=>{
