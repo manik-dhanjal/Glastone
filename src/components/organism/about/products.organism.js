@@ -50,6 +50,7 @@ const Products=()=>{
                 </p>  
                 </div>
            </SectionContent1>
+          
         </SProducts>
     )
 }

@@ -19,7 +19,7 @@ return(
     <div className="figure-member figure-member_has-social">
       <div className="figure-member__wrapper-img">
         <div className="figure-member__wrapper-img-inner">
-          <div className="lazy grayscale"><img src={`/img/assets/avatars/${props.children.img}`}  width="300" height="450" alt={props.children.name}/></div>
+          <div className="lazy grayscale"><img src={`/img/assets/about/avatars/${props.children.img}`}  width="300" height="450" alt={props.children.name}/></div>
           <div className="figure-member__curtain bg-accent-secondary-4"></div>
         </div>
         <div className="figure-member__social">

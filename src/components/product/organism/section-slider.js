@@ -36,6 +36,7 @@ margin-top:100px;
   font-size:2.5rem;
   font-weight:300;
   transform:rotateZ(10deg);
+  padding:0px;
 }
 .slide-num{
   justify-self:flex-end;
@@ -64,6 +65,7 @@ margin-top:100px;
 @media screen and (max-width:720px){
 .slash{
   font-size:1.5em;
+ 
 }
 
 

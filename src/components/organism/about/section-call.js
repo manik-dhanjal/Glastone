@@ -30,7 +30,7 @@ const SectionAction=()=>{
           </div>
         </div>
         <div className="section-image__wrapper section-image__wrapper_absolute" >
-          <div className="art-parallax__bg lazy-bg" style={{background:"url(/img/assets/project2/action-banner.png) "}}></div>
+          <div className="art-parallax__bg lazy-bg" style={{background:"linear-gradient(#00000080,#00000080),url(/img/assets/about/projectinmind.jpg)"}}></div>
         </div>
       </SAction>
     )

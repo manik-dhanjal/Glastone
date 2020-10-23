@@ -21,7 +21,7 @@ const Head =()=>{
     return(
         <SHead>
             <h2>Our Brand</h2>
-            <div className="banner-img"><img src="/img/assets/project2/Banner image 1.png"/></div>
+            <div className="banner-img"><img src="/img/assets/about/Brand Banner.png"/></div>
         </SHead>
     )
 }

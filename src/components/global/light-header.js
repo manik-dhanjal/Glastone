@@ -135,7 +135,7 @@ useEffect(() => {
             </ul>
           </li> */}
           <li><Link to="/about" data-letter="A" data-pjax-link="overlayMenu">
-              <div className="menu-overlay__item-wrapper js-text-to-fly split-text js-split-text" data-split-text-type="lines, words, chars">About</div></Link>
+              <div className="menu-overlay__item-wrapper js-text-to-fly split-text js-split-text" data-split-text-type="lines, words, chars">About Us</div></Link>
           </li>
           <li><Link to="/contacts" data-letter="C" data-pjax-link="overlayMenu">
               <div className="menu-overlay__item-wrapper js-text-to-fly split-text js-split-text" data-split-text-type="lines, words, chars">Contacts</div></Link>

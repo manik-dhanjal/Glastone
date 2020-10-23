@@ -41,6 +41,10 @@ padding:100px 30px;
 .team-content{
     max-width:1020px;
     margin:10px auto;
+
+}
+.content2{
+    margin-top:100px;
 }
 `
 const Team=()=>{
@@ -60,6 +64,21 @@ const Team=()=>{
                 TeamObj.map(cardInfo=><TeamCard key={cardInfo.key}>{cardInfo}</TeamCard>)
                 }
             </div> 
+
+
+            <div className="team-content content2">
+           <p> Glastone Mosaic has two state of the art manufacturing and warehousing facilities in Greater Noida, with a combined working area of approximately 13000 SFT. </p>
+
+            <p>We have 3 gas operated furnaces which operate within the temperature range 800 to 1100 degrees and serve the purpose of manfacturing of different types of glass, ceramic and porcelain tiles. The daily production output varies from 500 to 1000 SFT depending on the type of tiles being manufactured.</p>
+
+            <p>Glastone has always maintained strict standards of waste disposal and has designed the furnaces to optimize pollution levels, thereby trying our best towards green and environmentally sustainable operations. </p>
+
+            <p>As a part of its CSR initiatives, Glastone tries its best to contribute to the society by conducting regular donation drives on events such as Makar Sakranti and Navratri. We also try to support our employees by bearing the education costs of their kids in case they are unable to do so. </p>
+
+            <p>Glastone strongly believes in the principal of  Stay Together to Grow Together, and for this reason our employees have been with us for as long as 10 years and counting. </p>
+              
+            </div>  
+            
         </div>
       </STeam>
     )

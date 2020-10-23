@@ -16,13 +16,13 @@ const Masthead =()=>{
         <div className="section-masthead__inner container">
           <header className="row section-masthead__header justify-content-center">
             <div className="col-lg-10">
-              <h1 className="js-text-to-fly split-text js-split-text section-masthead__heading" data-split-text-type="lines, words, chars" data-split-text-set="chars">About</h1>
+              <h1 className="js-text-to-fly split-text js-split-text section-masthead__heading" data-split-text-type="lines, words, chars" data-split-text-set="chars">About Us</h1>
               <div className="section__headline"></div>
             </div>
           </header>
         </div>
         <div className="banner">
-            <img src="/img/assets/sectionBlog/img-1.jpg"/>
+            <img src="/img/assets/about/Banner.png"/>
         </div>
       </SMastHead>
      

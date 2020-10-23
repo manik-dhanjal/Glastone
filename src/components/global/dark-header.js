@@ -111,31 +111,9 @@ const ProductOnClick=()=>{
           </li>
           <li className="menu-item-has-children"><Link to="/project" data-letter="P">
               <div className="menu-overlay__item-wrapper js-text-to-fly split-text js-split-text" data-split-text-type="lines, words, chars">Projects</div></Link>
-            {/* <ul className="sub-menu">
-              <li><a href="projects-grid-1.html" data-letter="P" data-pjax-link="overlayMenu">
-                  <div className="menu-overlay__item-wrapper js-text-to-fly split-text js-split-text" data-split-text-type="lines, words, chars">Projects 001</div></a>
-              </li>
-              <li><a href="projects-grid-2.html" data-letter="P" data-pjax-link="overlayMenu">
-                  <div className="menu-overlay__item-wrapper js-text-to-fly split-text js-split-text" data-split-text-type="lines, words, chars">Projects 002</div></a>
-              </li>
-              <li><a href="projects-grid-3.html" data-letter="P" data-pjax-link="overlayMenu">
-                  <div className="menu-overlay__item-wrapper js-text-to-fly split-text js-split-text" data-split-text-type="lines, words, chars">Projects 003</div></a>
-              </li>
-            </ul> */}
           </li>
-          {/* <li className="menu-item-has-children"><a href="#" data-letter="P">
-              <div className="menu-overlay__item-wrapper js-text-to-fly split-text js-split-text" data-split-text-type="lines, words, chars">Pages</div></a>
-            <ul className="sub-menu">
-              <li><a href="blog.html" data-letter="B" data-pjax-link="overlayMenu">
-                  <div className="menu-overlay__item-wrapper js-text-to-fly split-text js-split-text" data-split-text-type="lines, words, chars">Blog</div></a>
-              </li>
-              <li><a href="404.html" data-letter="P" data-pjax-link="overlayMenu">
-                  <div className="menu-overlay__item-wrapper js-text-to-fly split-text js-split-text" data-split-text-type="lines, words, chars">Page 404</div></a>
-              </li>
-            </ul>
-          </li> */}
           <li><Link to="/about" data-letter="A" data-pjax-link="overlayMenu">
-              <div className="menu-overlay__item-wrapper js-text-to-fly split-text js-split-text" data-split-text-type="lines, words, chars">About</div></Link>
+              <div className="menu-overlay__item-wrapper js-text-to-fly split-text js-split-text" data-split-text-type="lines, words, chars">About Us</div></Link>
           </li>
           <li><Link to="/contacts" data-letter="C" data-pjax-link="overlayMenu">
               <div className="menu-overlay__item-wrapper js-text-to-fly split-text js-split-text" data-split-text-type="lines, words, chars">Contacts</div></Link>
