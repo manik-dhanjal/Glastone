@@ -4,9 +4,10 @@ exports.data=[
         title:"Glass Mosaics",
         desc:"Glass Mosaic tiles are an effective way to add dramatic luster to your room’s decor. Popular in swimming pools, kitchens and bathrooms, glass surfaces beautifully reflect light to make your structure feel larger and more welcoming.     Choose from a multitude of colors, shapes and patterns to add a fun border design or create an eye-catching focal point. Durable, water resistant and easy to wipe clean, glass mosaics are a smart installation in bathrooms, kitchens and even your swimming pool area. Adding a glass mosaic design is a great opportunity to let your creativity shine!",
         sliderImg:[
-            "/img/assets/project2/img-2-2.jpg",
-            "/img/assets/project2/img-2-3.jpg",
-            "/img/assets/project2/img-2-4.jpg"
+            "/img/assets/product/Factory.png",
+            "/img/assets/product/Furnace.png",
+            "/img/assets/product/Warehouse.png",
+            "/img/assets/product/header.png"
         ],
 
         subCategory:[
@@ -92,9 +93,10 @@ exports.data=[
         title:"Ceramic Mosaics",
         desc:"Ceramic mosaics are an interesting choice for interior designing due to the presence of patterns in them. They have very attractive patterns which make it great for interior designing. There are certain simple patterns which are used for decorating bathrooms.",
         sliderImg:[
-            "/img/assets/project2/img-2-2.jpg",
-            "/img/assets/project2/img-2-3.jpg",
-            "/img/assets/project2/img-2-4.jpg"
+            "/img/assets/product/Factory.png",
+            "/img/assets/product/Furnace.png",
+            "/img/assets/product/Warehouse.png",
+            "/img/assets/product/header.png"
         ],
 
         subCategory:[
@@ -151,9 +153,10 @@ exports.data=[
         title:"Stone Mosaic",
         desc:"Stone mosaic tiles are a great way to transform your homes. Small or larger format mosaic tile used as an entire backsplash are a great way to add dimension and character to a kitchen.",
         sliderImg:[
-            "/img/assets/project2/img-2-2.jpg",
-            "/img/assets/project2/img-2-3.jpg",
-            "/img/assets/project2/img-2-4.jpg"
+            "/img/assets/product/Factory.png",
+            "/img/assets/product/Furnace.png",
+            "/img/assets/product/Warehouse.png",
+            "/img/assets/product/header.png"
         ],
 
         subCategory:[
@@ -210,9 +213,10 @@ exports.data=[
         title:"Mosaic Blend",
         desc:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
         sliderImg:[
-            "/img/assets/project2/img-2-2.jpg",
-            "/img/assets/project2/img-2-3.jpg",
-            "/img/assets/project2/img-2-4.jpg"
+            "/img/assets/product/Factory.png",
+            "/img/assets/product/Furnace.png",
+            "/img/assets/product/Warehouse.png",
+            "/img/assets/product/header.png"
         ],
 
        products:[

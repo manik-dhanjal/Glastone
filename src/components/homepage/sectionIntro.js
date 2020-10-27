@@ -59,7 +59,7 @@ const SectionIntro=()=>{
   };
     return(
      
-        <Intro className="section section-intro section-masthead section-fullheight bg-dark color-white "style={{visibility: "inherit",opacity: "1"}} data-os-animation="data-os-animation">
+        <Intro className="section section-intro section-masthead section-fullheight bg-dark color-white "style={{visibility: "inherit",opacity: "1"}} >
         <div className="section-masthead__inner section-intro__inner section-fullheight__inner container">
           <header className="row section-intro__header section-masthead__header">
             <div className="col-lg-6" >

@@ -3,35 +3,26 @@ import styled from "styled-components";
 import TeamCard from "../../molecule/about/section-team-cards"
 
 
-    const TeamObj=[{ name:"Mark Graves",
+    const TeamObj=[{ name:"Suresh Gupta",
                      postion:"Founder",
                      fb:"#",
                      insta:"#",
                      twitter:"#",
                      behance:"#",
-                     img:"avatar-1.jpg" ,
+                     img:"Suresh Gupta.jpg" ,
                      key:1
                     },
                     {
-                     name:"Cathy Porras",
-                     postion:"Art Director",
+                     name:"Vipul Gupta",
+                     postion:"Founder",
                      fb:"#",
                      insta:"#",
                      twitter:"#",
                      behance:"#",
-                     img:"avatar-2.jpg",
+                     img:"Vipul Gupta.jpg",
                      key:2 
                     },
-                    {
-                     name:"George Tailey",
-                     postion:"UI / UX Designer",
-                     fb:"#",
-                     insta:"#",
-                     twitter:"#",
-                     behance:"#",
-                     img:"avatar-3.jpg" ,
-                     key:3
-                    }]
+                    ]
    
 const STeam=styled.section`
 padding:100px 30px;
