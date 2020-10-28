@@ -1,6 +1,6 @@
 import React from "react"
-import SectionBanner from "../molecule/section-banner-img"
-import SectionProductCards from "../molecule/section-product-cards"
+import SectionBanner from "../../molecule/product/section-banner-img"
+import SectionProductCards from "../../molecule/product/section-product-cards"
 const SectionProduct =({data})=>{
 return (
     <div className="product">

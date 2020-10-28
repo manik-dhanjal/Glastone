@@ -21,6 +21,11 @@ margin-bottom:5px;
     margin-top:0px;
    }
 }
+@media screen and (max-width:720px){
+  .section-services__inner{
+    text-align:center;
+  }
+}
 `
 const SectionServices=()=>{
   const Sidebar = posed.div({

@@ -29,7 +29,9 @@ const SNavFooter=styled.section`
             .section-nav-projects__arrow{
                 opacity:0;
                 transform:translate(-10px,-50%);
-               
+                @media screen and (max-width:768px){
+                    transform:translate(-10px,0%);
+                }
             }
       } 
       
@@ -47,10 +49,13 @@ const SNavFooter=styled.section`
             .section-nav-projects__arrow{
                 opacity:0;
                 transform:translate(10px,-50%);
-               
+                @media screen and (max-width:768px){
+                    transform:translate(10px,0%);
+                }
             }
       } 
-    
+     
+
 
 `
 const NavFooter=({nextProject,prevProject})=>{

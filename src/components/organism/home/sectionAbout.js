@@ -1,7 +1,7 @@
 import React ,{useState}from 'react'
 import styled from "styled-components"
 import { Parallax } from 'react-scroll-parallax';
-import Counter from "../atom/counter"
+import Counter from "../../atom/counter"
 
 
 
@@ -16,10 +16,21 @@ const SAbout = styled.section`
 .counter__number{
 font-size:72px;
 }
+.section-about__heading{
+  font-size:24px;
+  font-weight:400;
+}
 @media screen and (max-width:1060px){
   .counter__number{
     font-size:60px ;
 }
+}
+@media screen and (max-width:720px){
+  .section-about__heading{
+    font-size:20px;
+    text-align:center;
+  }
+
 }
 .fix-cont{
   overflow:hidden;
@@ -34,7 +45,7 @@ const SectionAbout=()=>{
             <div className="col-lg-6 section-about__content order-lg-2">
               <header className="section-about__header">
                 
-                <h2 className="section-about__heading" style={{backgroundColor:'#333333',fontSize:'30px'}}>
+                <h2 className="section-about__heading" style={{backgroundColor:'#333333'}}>
                 <div className="section__headline section-about__headline" />
                 We at Glastone Mosaic, backed by our strong spirit and time tested expertise, aim to provide an endless range of Mosaics and Patterns to turn your ideas into everlasting memories</h2>
                 <div className="patern-cont section-about__decor">

@@ -11,6 +11,7 @@ const SMasthead= styled.section`
 }
 .section__headline{
     margin-left:auto;
+    margin-top:20px;
 }
 `
 const SectionMastHead=({category,title,excerpt})=>{
@@ -21,9 +22,11 @@ const SectionMastHead=({category,title,excerpt})=>{
         <header className="row section-masthead__header justify-content-center">
             <div className="col mw-720 content">
             <div className="subheading split-text js-split-text section-masthead__subheading">{category}</div>
-            <h1 className="js-text-to-fly split-text js-split-text section-masthead__heading">{title}</h1>
-            <h4 className="heading-light split-text js-split-text section-masthead__text">{parse(excerpt)}</h4>
+            <h1 className="js-text-to-fly split-text js-split-text section-masthead__heading">{title}
             <div className="section__headline"></div>
+            </h1>
+            <h4 className="heading-light split-text js-split-text section-masthead__text">{parse(excerpt)}</h4>
+           
             </div>
         </header>
         </div>

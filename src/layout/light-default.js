@@ -15,6 +15,7 @@ const LightLayout =(Props)=>{
            {Props.children}
            
            </div>
+           {Props.fullwidth}
          </main>
          <Footer/> 
         </div>

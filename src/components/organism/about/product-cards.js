@@ -1,4 +1,4 @@
-import React from "react"
+import React,{useRef} from "react"
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -6,23 +6,20 @@ import { faAngleRight} from '@fortawesome/free-solid-svg-icons'
 import { faAngleLeft} from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import ProductCard from "../../molecule/about/product-card"
-function SampleNextArrow(props) {
-  const {  style, onClick,className } = props;
-  return (
+import styled from "styled-components"
 
-    <span className="right-arrow" style={{color:"rgb(197, 158, 114)"}}><FontAwesomeIcon icon={faAngleRight} style={{ ...style}} 
-    onClick={onClick} /></span>
-  );
+const SSlider=styled.section`
+.arrows{
+  font-size:30px;
+  color:rgb(197, 158, 114);
 }
-
-function SamplePrevArrow(props) {
-  const {style, onClick } = props;
-  return (
-
-  <span className="left-arrow" style={{color:"rgb(197, 158, 114)"}}>  <FontAwesomeIcon icon={faAngleLeft}  style={{ ...style}}  onClick={onClick}/> <span className="slash">/</span></span>
-  );
+.slash{
+  font-size:1.2em;
 }
-
+.left-arrow,.right-arrow{
+  cursor:pointer;
+}
+`
 const data=[
     {
         img:"/img/assets/about/product/img1.jpg",
@@ -47,19 +44,16 @@ const data=[
 ]
 
 export default function SectionProducts() {
- 
+  var slider=useRef(null)
   var settings = {
     dots: false,
-    infinite: false,
     speed: 500,
     slidesToShow: 4,
     slidesToScroll: 4,
-    infinite: false,
-    arrows:true,
+    infinite: true,
+    arrows:false,
     centerPadding:0,
    
-    nextArrow: <SampleNextArrow />,
-    prevArrow: <SamplePrevArrow />,
     responsive: [
       {
         breakpoint: 1025,
@@ -89,11 +83,18 @@ export default function SectionProducts() {
   };
   return (
    
-      <section className="section section-content section_pb-xsmall bg-light  "style={{visibility: "inherit",opacity: "1"}} data-os-animation="data-os-animation">
-          <Slider {...settings}>
+      <SSlider className="section section-content section_pb-xsmall bg-light  "style={{visibility: "inherit",opacity: "1"}} data-os-animation="data-os-animation">
+          <Slider {...settings} ref={c => (slider = c)}>
             {data.map((project,i)=><ProductCard data={project} key={i}/>)}
          </Slider>
-      </section>
+         <div className="container-fluid arrows-cont">
+           <div className="arrows">
+            <span  className="left-arrow"><FontAwesomeIcon icon={faAngleLeft} onClick={()=>slider.slickPrev()}/></span>
+            <span className="slash">/</span>
+            <span  className="right-arrow"><FontAwesomeIcon icon={faAngleRight} onClick={()=>slider.slickNext()}/></span>
+           </div> 
+         </div>
+      </SSlider>
 
   
 

@@ -8,7 +8,6 @@ height:95vh;
 & .section-masthead__header>div{
   display:flex;
   align-items:center;
-
   & >.logo{
     min-width:20%;
     margin-right:20px;
@@ -30,15 +29,19 @@ height:95vh;
       letter-spacing:1.6em;
       color:white;
       line-height:1.1em;
+      margin-right:-1.1em;
       font-size:clamp(16px,3vw,36px);
       white-space:nowrap;
     }
   }
 }
-@media screen and(max-width:720px){
+@media screen and (max-width:720px){
   & .section-masthead__header .logo{
       min-width:50px;
      
+}
+& .section-masthead__header>div{
+  justify-content:center;
 }
 `
 const SectionIntro=()=>{

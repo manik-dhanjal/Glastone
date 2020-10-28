@@ -2,12 +2,11 @@ import React from "react"
 import '../dist/css/project-list-custom.css';
 import Layout from "../layout/light-default"
 import {graphql} from "gatsby"
-import SectionMasterhead from "../components/product-list/organism/section-masthead"
-import SectionPortfolio from "../components/product-list/organism/section-portfolio"
+import SectionMasterhead from "../components/organism/project-list/section-masthead"
+import SectionPortfolio from "../components/organism/project-list/section-portfolio"
  const ProjectList = ({data})=>{
     const project = data.allWordpressPost.nodes
     const categories= data.allWordpressCategory.nodes
-    console.log(project,categories)
      return(
         <Layout>
              <SectionMasterhead/>

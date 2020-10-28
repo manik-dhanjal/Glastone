@@ -32,7 +32,9 @@ padding:100px 30px;
 .team-content{
     max-width:1020px;
     margin:10px auto;
-
+@media screen and (max-width:720px){
+    text-align:center;
+}
 }
 .content2{
     margin-top:100px;

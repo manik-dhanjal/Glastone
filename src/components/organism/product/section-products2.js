@@ -2,7 +2,7 @@ import React,{useState} from "react"
 import styled from "styled-components"
 import Lightbox from 'react-image-lightbox';
 import 'react-image-lightbox/style.css'; // This only needs to be imported once in your app
-import ProductCard from "../molecule/div-product-card2" 
+import ProductCard from "../../molecule/product/div-product-card2" 
 
 const SSectionProducts=styled.div`
 .cards{

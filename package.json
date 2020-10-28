@@ -32,7 +32,7 @@
     "react-pose": "^4.0.10",
     "react-pose-text": "^3.1.0",
     "react-scroll-parallax": "^2.3.4",
-    "react-slick": "^0.26.1",
+    "react-slick": "^0.27.12",
     "react-visibility-sensor": "^5.1.1",
     "slick-carousel": "^1.8.1",
     "styled-components": "^5.2.0"

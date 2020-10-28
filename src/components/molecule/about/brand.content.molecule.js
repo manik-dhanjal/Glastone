@@ -17,6 +17,7 @@ flex-wrap:no-wrap;
         margin:0px;
         padding:30px;
     }
+    text-align:center;
 }
 `
 

@@ -3,7 +3,7 @@ var brandImage=["Ashiana.png","bestech.png","cem.png","Central Park.png","Chaayo
 const SectionClient=()=>{
     return(
       <div>
-       <section className="section section-content section_pb-xsmall bg-dark text-center our-clients"style={{visibility: "inherit",opacity: "1"}} data-os-animation="data-os-animation">
+       <section className="section section-content section_pb-xsmall   bg-dark text-center our-clients"style={{visibility: "inherit",opacity: "1"}} data-os-animation="data-os-animation">
         <div className="container">
           <div className="row justify-content-center">
             <div className="col-lg-8 section-content__header">
@@ -14,7 +14,8 @@ const SectionClient=()=>{
             </div>
           </div>
         </div>
-        <div className="brand-logo-container container">
+        </section> 
+        <div className="brand-logo-container section_pb container">
           {
           brandImage.map((img,i)=>
             <div className="brand-logo" key={i}>
@@ -24,7 +25,7 @@ const SectionClient=()=>{
             
           }
          </div>
-      </section>
+     
       
       </div>
       

@@ -1,9 +1,19 @@
 import React from "react";
+import styled from "styled-components"
 
+const Section = styled.section`
+@media screen and (max-width:720px){
+  text-align:center;
+  .section__headline{
+    margin-left:auto;
+    margin-right:auto;
+  }
+}
+`
 
 const SectionContent1 =({children})=>{
     return(
-        <section className="section section-content section_pt section_pb ">
+        <Section className="section section-content section_pt section_pb ">
         <div className="container">
           <div className="row">
             <div className="col-lg-2 section-content__content">
@@ -12,7 +22,7 @@ const SectionContent1 =({children})=>{
             {children}
           </div>
         </div>
-      </section>
+      </Section>
     )
 }
 export default SectionContent1;

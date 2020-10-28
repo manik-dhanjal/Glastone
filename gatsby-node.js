@@ -1,4 +1,3 @@
-const { match } = require("assert")
 const path = require("path")
 const products =require("./src/template/product/productData.js") 
 exports.createPages = async ({graphql,actions}) => {
