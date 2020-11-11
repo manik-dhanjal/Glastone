@@ -3,7 +3,8 @@
  *
  * See: https://www.gatsbyjs.org/docs/gatsby-config/
  */
-
+const dotenv = require("dotenv")
+dotenv.config()
 module.exports = {
   /* Your site config here */
   plugins: [
@@ -73,8 +74,7 @@ module.exports = {
         perPage: 100,
         // Search and Replace Urls across WordPress content.
         searchAndReplaceContentUrls: {
-          sourceUrl: "http://glastone.netart.a2hosted.com",
-          replacementUrl: "https://replacement-url.com",
+          sourceUrl:process.env.WP_URL,
         },
         // Set how many simultaneous requests are sent at once.
         concurrentRequests: 10,

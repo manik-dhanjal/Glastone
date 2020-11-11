@@ -78,7 +78,7 @@ class SectionProjects extends React.Component{
             {this.props.data.allWordpressPost.nodes.map((project,i)=><Card data={project} key={i}/>)}
             
          </Slider>
-         { console.log(this.slider)}
+      
          <div className="container-fluid arrows-cont">
            <div className="arrows">
             <span  className="left-arrow"><FontAwesomeIcon icon={faAngleLeft} onClick={()=>console.log(this.slider.slickPrev())}/></span>
